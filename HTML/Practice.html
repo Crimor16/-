@@ -13,8 +13,8 @@
 				display: block;
 				margin-bottom: 10px;
 				width: 60%;
-				height: 40em;
-
+				height: 60em;
+				border-radius: 5px;
 			}
 			button{
 				font-size: 20px;
@@ -39,7 +39,13 @@
 			a{
 				text-decoration: none;
 			}
+			.code{
+				width: 58.7%;
+				border-radius: 5px;
+			}
 		</style>
+
+		<link href="..\HTML\prism.css" rel="stylesheet" />
 	</head>
 	<body>
 		<a href = '..\HTML\index.html'><button>Вернуться</button></a>
@@ -54,41 +60,504 @@
 			само приложение.
 			<img src = '..\Images\Practice\П.4.png'>
 			Для кнопок в 1 сайте использовались следующие стили:
-			<img src = '..\Images\Practice\CSS.1.1.png'>
-			<img src = '..\Images\Practice\CSS.1.2.png'>
+			<pre class = 'code'><code class="language-css">
+				.button{
+					margin-left: 35%;
+					margin-top: 5%;
+					width: 30%;
+					height: 80px;
+					border-radius: 3px;
+					background-color: #ffa500;;
+					border: 1px solid #e2dc16;
+					outline: none;
+					box-shadow: 0 0 40px #0400ff;
+					cursor: pointer;
+					font-size: 30px;
+					color: blue;
+					font-family: sans-serif;
+				}
+				.button:hover{
+					background: #ffc300;
+					transition: width 2s, height 2s, background-color 2s, transform 4s;	
+				}
+			</code></pre>
 			Кода в 1 сайте нет.
 			Для кнопок во 2 сайте использовались следующие стили:
-			<img src = '..\Images\Practice\CSS.2.1.png'>
-			<img src = '..\Images\Practice\CSS.2.2.png'>
-			<img src = '..\Images\Practice\CSS.2.3.png'>
+			<pre class = 'code'><code class="language-css">
+				#button1{
+					width: 200px;
+					height: 33px;
+					border-radius: 7px;
+					color: #35cece;
+					margin-top: 3%;
+					background-color: #4b4ee5;
+					outline: none;
+					box-shadow: 0 0 20px #0004ff;
+					border: 1px solid #9347e5;
+					cursor: pointer;
+					font-weight: bold;
+					font-family: sans-serif;
+				}
+				#button1:active{
+					background-color: #0700ed;
+					color: white;
+				}
+				#button1:hover{
+					box-shadow: 0 0 20px #c7f400;
+				}
+			</code></pre>
 			Для текстовых строк во 2 сайте использовались следующие стили:	
-			<img src = '..\Images\Practice\CSS.2.4.png'>
+			<pre class = 'code'><code class="language-css">
+				#text-1{
+					width: 400px;
+					height: 33px;
+					border-radius: 3px;
+					margin-left: 33%;
+					margin-top: 1%;
+					border: 1px solid blue;
+					text-align: center; 
+					display: block;
+					box-shadow: 0 0 30px #00ff5d;
+					color: #4b4ee5;
+					font-weight: bold;
+					font-family: sans-serif;
+				}
+			</code></pre>
 			Во 2 сайте использовался следующий код:
-			<img src = '..\Images\Practice\JS.2.png'>
+			<pre class = 'code'><code class="language-css">
+				'use strict'
+
+				function notification(search){
+					search = search.toString();
+					let all = document.querySelector('.all');
+					let div = document.querySelector('.notification');
+					let end = '<button class="buttonNotification">Подтвердить</button>';
+					div.innerHTML = search + end;
+
+					all.style.zIndex = '1';
+					all.style.transition = 'background 1s';
+					all.style.background = 'rgba(0, 0, 0, 0.5)';;
+
+					div.style.transition = 'top 1s';
+					div.style.top = '10px';
+
+					let divbutton = document.querySelector('.notification .buttonNotification');
+
+					divbutton.addEventListener('click', function(){
+						all.style.background = '';
+						all.style.zIndex = '';
+
+						div.style.top = '-104px';
+					});
+				};
+
+				let login = document.getElementById('text-1');
+				let password = document.getElementById('text-2');
+				let password2 = document.getElementById('text-3');
+				let button = document.getElementById('button');
+				notification("Внимание!\nЕсли вы при уже имеющимся аккаунте создадите новый, то старый аккаунт полностью удалится и заменится на этот.");
+				button.addEventListener('click', function(){
+					let a = document.getElementById('text-1').value;
+					let a1 = document.getElementById('text-2').value;
+					let a2 = document.getElementById('text-3').value;
+					if(login.checkValidity()&password.checkValidity()&password2.checkValidity()){
+						if(a[0]!=" "&a1[0]!=" "&a2[0]!=" "){
+							if(a1 === a2){
+								localStorage.setItem('login3965', a);
+								localStorage.setItem('password3965', a1);
+
+								localStorage.removeItem('date');
+								localStorage.removeItem('select');
+								localStorage.removeItem('text');
+								localStorage.removeItem('pre-last');
+								localStorage.removeItem('today');
+								localStorage.removeItem('last');
+									
+								location.href = '../HTML/version 1.0 (3).html';
+							}
+							else
+							{
+								notification("Пароли не совпадают.")
+							};
+						}
+						else
+						{
+							notification("В строках 1 элемент не должен быть пробелом.")
+						}
+					}
+					else
+					{
+						notification("Не все обязательные поля были заполнены.")
+					};
+				});
+			</code></pre>
 			Для кнопок в 3 сайте использовались следующие стили:
-			<img src = '..\Images\Practice\CSS.3.1.png'>
-			<img src = '..\Images\Practice\CSS.3.2.png'>
-			<img src = '..\Images\Practice\CSS.3.3.png'>
+			<pre class = 'code'><code class="language-css">
+				#button{
+					width: 200px;
+					height: 33px;
+					border-radius: 7px;
+					color: #35cece;
+					margin-top: 3%;
+					margin-left: 33%;
+					background-color: #4b4ee5;
+					outline: none;
+					box-shadow: 0 0 20px #0004ff;
+					border: 1px solid #9347e5;
+					cursor: pointer;
+					font-weight: bold;
+					font-family: sans-serif;
+				}
+				#button:active{
+					background-color: #0700ed;
+					color: white;
+				}
+				#button:hover{
+					box-shadow: 0 0 20px #c7f400;
+				}
+			</code></pre>
 			Для текстовых строк в 3 сайте использовались следующие стили:
-			<img src = '..\Images\Practice\CSS.3.4.png'>
+			<pre class = 'code'><code class="language-css">
+				#text-1{
+					width: 400px;
+					height: 33px;
+					border-radius: 3px;
+					margin-left: 33%;
+					margin-top: 1%;
+					border: 1px solid blue;
+					text-align: center; 
+					display: block;
+					box-shadow: 0 0 30px #00ff5d;
+					color: #4b4ee5;
+					font-weight: bold;
+					font-family: sans-serif;
+				}
+			</code></pre>
 			В 3 сайте использовался следующий код:
-			<img src = '..\Images\Practice\JS.3.png'>
+			<pre class = 'code'><code class="language-css">
+				'use strict'
+
+				function notification(search){
+					search = search.toString();
+					let button = document.querySelector('.main');
+					let all = document.querySelector('.all');
+					let div = document.querySelector('.notification');
+					let end = '<button class="buttonNotification">Подтвердить</button>';
+					div.innerHTML = search + end;
+
+					all.style.zIndex = '1';
+					all.style.transition = 'background 1s';
+					all.style.background = 'rgba(0, 0, 0, 0.5)';;
+
+					div.style.transition = 'top 1s';
+					div.style.top = '10px';
+
+					let divbutton = document.querySelector('.notification .buttonNotification');
+
+					divbutton.addEventListener('click', function(){
+						all.style.background = '';
+						all.style.zIndex = '';
+
+						div.style.top = '-104px';
+					});
+				};
+
+				let text1 = document.getElementById('text-1');
+				let text2 = document.getElementById('text-2');
+				let button = document.getElementById('button');
+
+				button.addEventListener('click', function(){
+					let a = document.getElementById('text-1').value;
+					let a1 = document.getElementById('text-2').value;
+					let login = localStorage.getItem('login3965');
+					let password = localStorage.getItem('password3965');
+
+					if(text1.checkValidity()&text2.checkValidity()){
+						if(login!=undefined){
+							if(login!=a|a1!=password){
+								notification("Был введён неверный логин или пароль.")
+							}
+							else{	
+								location.href = '../HTML/version 1.0 (3).html';
+							};
+						}
+						else
+						{
+							notification("На этом компьютере аккаунта не существует.\nСоздайте его по ссылке ниже.");
+						};
+						
+					}
+					else
+					{
+						notification("Были введены не все данные.")
+					};
+				});
+			</code></pre>
 			Для кнопок в 4 сайте использовались следующие стили:
-			<img src = '..\Images\Practice\CSS.4.1.png'>
-			<img src = '..\Images\Practice\CSS.4.2.png'>
-			<img src = '..\Images\Practice\CSS.4.3.png'>
+			<pre class = 'code'><code class="language-css">
+				.button-1{
+					height: 33px;
+					border-radius: 7px;
+					color: black;
+					background-color: #d1ff3a;
+					outline: none;
+					border: 1px solid #d1ff3a;
+					cursor: pointer;
+					font-weight: bold;
+					margin-left: 89%;
+					font-family: sans-serif;
+				}
+				.button-1:hover{
+					box-shadow: 0 0 20px #c7f400;
+				}
+				.button-1:active{
+					background-color: #d1ff3a;
+					color: white;
+				}
+			</code></pre>
 			Для текстовых строк в 4 сайте использовались следующи стили:
-			<img src = '..\Images\Practice\CSS.4.4.png'>
+			<pre class = 'code'><code class="language-css">
+				#text-1{
+					width: 53%;
+					height: 20px;
+					border-radius: 5px;
+					text-align: center;
+					outline: none;
+					border: 3px solid #d1ff3a;
+					background-color: white;
+					font-weight: bold;
+					resize: none;
+					font-family: sans-serif;
+				}
+			</code></pre>
 			В 4 сайте использовался следующий код:
-			<img src = '..\Images\Practice\JS.4.1.png'>
-			<img src = '..\Images\Practice\JS.4.2.png'>
+			<pre class = 'code'><code class="language-css">
+				'use strict'
+
+				function notification(search){
+					search = search.toString();
+					let button = document.querySelector('.main');
+					let all = document.querySelector('.all');
+					let div = document.querySelector('.notification');
+					let end = ' < button class="buttonNotification" > Подтвердить < /button > ';
+					div.innerHTML = search + end;
+
+					all.style.zIndex = '1';
+					all.style.transition = 'background 1s';
+					all.style.background = 'rgba(0, 0, 0, 0.5)';;
+
+					div.style.transition = 'top 1s';
+					div.style.top = '10px';
+
+					let divbutton = document.querySelector('.notification .buttonNotification');
+
+					divbutton.addEventListener('click', function(){
+						all.style.background = '';
+						all.style.zIndex = '';
+
+						div.style.top = '-104px';
+					});
+				};
+
+				let button = document.getElementById("button-2");
+				let button2 = document.getElementById("button-3");
+				let button3 = document.getElementById("button-4");
+				let select = document.getElementById("select");
+				let text  = document.getElementById("text-1");
+				let text2 = document.getElementById("text-2");
+				let date = document.getElementById("date");
+				let div = document.getElementById("div1");
+				let c;
+				let c1;
+				let d1;
+				let b;
+				let b1;
+				let b2;
+
+				let h1 = document.createElement("h1");
+
+				let l = localStorage.getItem("date");
+				if(l!=undefined){
+					b1 = l;
+					date.value = l;
+				};
+				let l1 = localStorage.getItem("select");
+				if(l1!=undefined){
+					select.value = l1;
+				};
+				let l2 = localStorage.getItem("text");
+				if(l2!=undefined){
+					b = l2;
+					text.value = l2;
+				};
+				let l3 = localStorage.getItem("pre-last");
+				if(l3!=undefined){
+					c1 = l3;
+					c1 = +c1;
+				};
+				let l4 = localStorage.getItem("today");
+				if(l4!=undefined){
+					b2 = l4;
+					b2 = +b2;
+					text2.value = l4;
+				};
+				let l5 = localStorage.getItem("last");
+				if(l5!=undefined){
+					c = l5;
+					c = +c;
+				};
+				if(c!=undefined&select.value!=undefined){
+					div.appendChild(h1).innerHTML = "Завтра вам стоит потратить не больше " +Math.round(c) +select.value;
+				};
+
+				function isDigit(str) {
+					return str && !/[^\d]/.test(str);
+				};
+
+				button3.addEventListener('click', function(){
+					text.value = "";
+					date.value = "";
+					text2.value = "";
+					select.value = " руб."; 
+					div.appendChild(h1).innerHTML = "";
+					localStorage.removeItem('date');
+					localStorage.removeItem('select');
+					localStorage.removeItem('text');
+					localStorage.removeItem('pre-last');
+					localStorage.removeItem('today');
+					localStorage.removeItem('last');
+					localStorage.removeItem('login3965');
+					localStorage.removeItem('password3965');
+					location.href = 'version 1.0 (1).html';
+				});
+
+				button.addEventListener('click', function(){
+					
+					if((isDigit(text.value)) === true&(isDigit(date.value)) === true){
+						let a = text.value;
+						b = +a;
+						localStorage.setItem('text', b) 
+						let d = date.value;
+						b1 = +d;
+						localStorage.setItem('date', b1);	
+						c = b/b1;
+						localStorage.setItem('last', c);
+						c1 = c;
+						localStorage.setItem('pre-last', c1);
+						div.appendChild(h1).innerHTML = "Завтра вам стоит потратить не больше " +Math.round(c) +select.value;
+					}
+					else
+					{
+						notification("Были введены числа или не было введно ничего.\nПожалуйста введите только цифры.")
+					};
+
+				});
+
+				button2.addEventListener('click', function(){
+					if(div.appendChild(h1).innerHTML === ""){
+						notification("Для начала задайте верхние параметры.");
+					}
+					else
+					{	
+						if((isDigit(text2.value)) === true){
+							if((+text2.value) > b){
+								notification("Ты шот перегнул.")
+								text.value = "";
+								date.value = "";
+								text2.value = "";
+								select.value = " руб."; 
+								div.appendChild(h1).innerHTML = "";
+								localStorage.removeItem('date');
+								localStorage.removeItem('select');
+								localStorage.removeItem('text');
+								localStorage.removeItem('pre-last');
+								localStorage.removeItem('today');
+								localStorage.removeItem('last');
+							}else
+							if((+text2.value) === b){
+								notification("Ты просрал все деньги.")
+								text.value = "";
+								date.value = "";
+								text2.value = "";
+								select.value = " руб."; 
+								div.appendChild(h1).innerHTML = "";
+								localStorage.removeItem('date');
+								localStorage.removeItem('select');
+								localStorage.removeItem('text');
+								localStorage.removeItem('pre-last');
+								localStorage.removeItem('today');
+								localStorage.removeItem('last');
+							}
+							else{
+								text.value = +b - (+text2.value);
+								b1=b1-1;
+								date.value = b1;
+								localStorage.setItem('date', b1);
+								if(b1>0){
+									let a1 = text2.value;
+									b2 = +a1;
+									c = +c;
+									localStorage.setItem('today', b2);
+									if(Math.round(c) < b2){
+										d1 = c-b2;
+										c = c1;
+										localStorage.setItem('last', c);
+										c = c+d1;
+										localStorage.setItem('last', c);
+										notification("Увы! Вы потратили больше нормы на " +Math.round(-d1) +select.value);
+										notification("Теперь ваша дозволенная трата на завтра уменьшится на " +Math.round(-d1) +select.value);
+										div.appendChild(h1).innerHTML = "Завтра вам стоит потратить не больше " +Math.round(c) +select.value;
+									}
+									else
+									if(Math.round(c)>b2){
+										d1 = c-b2;
+										c = c1;
+										localStorage.setItem('last', c);
+										c = c+d1;
+										localStorage.setItem('last', c);
+										notification("Вау! Вы сэкономили " +Math.round(d1) +select.value);
+										notification("Теперь ваша дозволенная трата на завтра увеличится на " +Math.round(d1) +select.value);
+										div.appendChild(h1).innerHTML = "Завтра вам стоит потратить не больше " +Math.round(c) +select.value;
+									}
+									else
+									if(Math.round(c)===b2){
+										c = c1;
+										notification("Так держать! Сегодня вы потратили не больше дозволенного.")
+										div.appendChild(h1).innerHTML = "Завтра вам стоит потратить не больше " +Math.round(c) +select.value;
+										localStorage.setItem('last', c);
+
+									}
+								}
+								else
+								if(b1===0){
+									notification("Поздравляем, вы растянули сумму.");
+									text.value = "";
+									date.value = "";
+									text2.value = "";
+									select.value = " руб."; 
+									div.appendChild(h1).innerHTML = "";
+									localStorage.removeItem('date');
+									localStorage.removeItem('select');
+									localStorage.removeItem('text');
+									localStorage.removeItem('pre-last');
+									localStorage.removeItem('today');
+									localStorage.removeItem('last');
+								};
+							};	
+						}	
+						else
+						{
+							notification("Были введены числа или не было введно ничего.\nПожалуйста введите только цифры.");
+						};
+					};	
+				});
+			</code></pre>
 
 			<h2>Отчёт</h2>
 			<a download href = "..\Documents\Отчёт.docx"><button>Скачать</button></a>
 			<h2>Презентация</h2>
 			<a download href = "..\Documents\Кардаильский Алексей T1.pptx"><button>Скачать</button></a>
 		</div>	
-		<script>
-		</script>
+		<script src="prism.js"></script>
 	</body>
 </html>
