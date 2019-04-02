@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background: #638bcc;
+				color: #f2f2f2;
+				font-family: sans-serif;
+			}
+			div{
+				margin-bottom: 100px;
+			}
+			img{
+				display: block;
+				margin-bottom: 5px;
+				width: 60%;
+				height: 40em;
+				border-radius: 5px;
+			}
+			button{
+				font-size: 20px;
+				border-radius: 7px;
+				color: #afaeae;
+				background-color: #38527c;
+				outline: none;
+				border: 1px solid #628db2;
+				cursor: pointer;
+				font-weight: bold;
+				font-family: sans-serif;
+				margin-bottom: 20px;
+			}
+			button:active{
+				background-color: #5793c6;
+			}
+			button:hover{
+				box-shadow: 0 0 20px white;
+				color: white;
+			}
+			pre{
+				font-size: normal;
+			}
+			.code{
+				width: 56%;
+				border-radius: 5px;
+			}
+		</style>
+
+		<link href="..\HTML\prism.css" rel="stylesheet" />
+	</head>
+	<body>
+		<a href = '..\HTML\index.html'><button>Вернуться</button></a>
+		<div>
+			<span style = 'font-size: 50px'>Статус: не законечена</span>
+			<img src = '..\Images\Functions\function1.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function String(string){
+					let NewString = "";
+					for(let i = 0;i < string.length;i += 1){
+						if(string[i] !== " "){
+							for(i;i < string.length;i +=1){
+								NewString = NewString + string[i];
+							};
+							break;
+						};
+						if(string[i] == " "){
+							continue;
+						};
+
+					};
+					string = NewString;
+					NewString = "";
+
+					let last = string.length - 1;
+					for(last;last > -1;last -= 1){
+						if(string[last] !== " "){
+							for(last;last > -1;last -=1){
+								NewString = NewString + string[last];
+							};
+							break;
+						};
+						if(string[last] == " "){
+							continue;
+						};
+					};
+					string = NewString;
+					NewString = "";
+
+					return string;
+			};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function2.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function min4(){
+					let number;
+					let	ending = 4;
+					let min = 30001;
+					let value = +prompt("Сколько собираетесь вводить чисел?");
+
+					for (let i = 0; i < value; i += 1){
+						number = +prompt("Введите число.");
+						if((number < min) & (number % 10 === ending)){
+							min = number;
+						};
+					};
+					if(min === 30001){
+						return false;
+					};
+					return min
+			};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function3.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function OpenSenior(mas){
+					let LocalMas;
+					for(let i = 0;i < mas.length;i += 1){
+						LocalMas = mas[i];
+						if((LocalMas[0] >= 55) & (LocalMas[1] > 7)){
+							mas[i] = "Senior";
+						}
+						else
+						{
+							mas[i] = "Open";
+						};
+					};
+					return mas;		
+				};	
+			</code></pre>
+		</div>
+		
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function4.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function Pangramma(string){
+					string = string.toLowerCase();
+					for(let i = 0;i < string.length;i += 1){
+						let Letter = string[i];
+						let PreI;
+						let PosI;
+						if(i === 0){
+							posI = i + 1;
+							for(posI;posI < string.length;posI += 1){
+								if(string[posI] == Letter){
+									return false;
+								}
+								else
+								{
+									continue;
+								};
+							};
+						}
+						else
+						{
+							preI = 0;
+							for(preI;preI < i;preI += 1){
+								if(string[preI] == Letter){
+									return false;
+								}
+								else
+								{
+									continue;
+								};
+							};
+						};
+					};
+					return true;
+				};	
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function5.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function random(number, counter){
+					if(number < 0) return false;
+
+					let answer = Math.round(Math.random() * (number - 1) +  1);
+
+					
+					for(let i = 0;i < counter; i+=1){
+							let AnotherNumber = +prompt("Угадайте число.");	
+
+
+						if(AnotherNumber == answer)
+							{
+								alert("Вы победили!");
+								return;
+							}
+						else
+						{
+							if(AnotherNumber < answer)
+								{
+									alert("Загаданное число больше.")
+								} 
+							else if(AnotherNumber > answer)
+								{
+									alert("Загаданное число меньше.")
+								};
+						}
+					};
+
+					alert("Вы проиграли.");
+				}
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function6.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function refresh(mas){
+					for(let i = 0;i < mas.length; i += 1){
+						let number = Math.round(Math.random() * (mas.length - 1) +  1);
+
+						let last = mas.length - 1;
+						if(number > last)
+							{
+								number -= 1
+							};
+
+						let FirstNumber = mas[i];
+						let SecondNumber = mas[number];
+
+						mas[i] = SecondNumber;
+						mas[number] = FirstNumber;
+					};
+					return mas;
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function7.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function string(string){
+					if(string === +string){
+						return false;
+					};
+
+					string = string.toLowerCase();
+					string = string.split(" ");
+
+					let max = 0;
+					let NRmaxword;
+					let maxword = "";
+					let LocalString;
+					let sum = 0;
+
+					for(let i=0;i < string.length;i+=1){
+						Localstring = string[i];
+						for(let i=0;i < Localstring.length;i+=1){
+							switch(Localstring[i]){
+								case "a":
+									sum = sum + 1;
+									break;
+								case "b":
+									sum = sum + 2;
+									break;
+								case "c":
+									sum = sum + 3;
+									break;
+								case "d":
+									sum = sum + 4;
+									break;
+								case "e":
+									sum = sum + 5;
+									break;
+								case "f":
+									sum = sum + 6;
+									break;
+								case "g":
+									sum = sum + 7;
+									break;
+								case "h":
+									sum = sum + 8;
+									break;
+								case "i":
+									sum = sum + 9;
+									break;
+								case "j":
+									sum = sum + 10;
+									break;
+								case "k":
+									sum = sum + 11;
+									break;
+								case "l":
+									sum = sum + 12;
+									break;
+								case "m":
+									sum = sum + 13;
+									break;
+								case "n":
+									sum = sum + 14;
+									break;
+								case "o":
+									sum = sum + 15;
+									break;
+								case "p":
+									sum = sum + 16;
+									break;
+								case "q":
+									sum = sum + 17;
+									break;
+								case "r":
+									sum = sum + 18;
+									break;
+								case "s":
+									sum = sum + 19;
+									break;
+								case "t":
+									sum = sum + 20;
+									break;
+								case "u":
+									sum = sum + 21;
+									break;
+								case "v":
+									sum = sum + 22;
+									break;
+								case "w":
+									sum = sum + 23;
+									break;
+								case "x":
+									sum = sum + 24;
+									break;
+								case "y":
+									sum = sum + 25;
+									break;
+								case "z":
+									sum = sum + 26;
+									break;
+							}
+						};
+						if(max < sum){
+							max = sum;
+							NRmaxword = string[i];
+						};
+						sum = 0;
+					};
+					NRmaxword = NRmaxword.split("");
+					for(let i = 0;i < NRmaxword.length;i+=1){
+						switch(NRmaxword[i]){
+							case "a":
+								maxword = maxword + "a";
+								break;
+							case "b":
+								maxword = maxword + "b";
+								break;
+							case "c":
+								maxword = maxword + "c";
+								break;
+							case "d":
+								maxword = maxword + "d";
+								break;
+							case "e":
+								maxword = maxword + "e";
+								break;
+							case "f":
+								maxword = maxword + "f";
+								break;
+							case "g":
+								maxword = maxword + "g";
+								break;
+							case "h":
+								maxword = maxword + "h";
+								break;
+							case "i":
+								maxword = maxword + "i";	
+								break;
+							case "j":
+								maxword = maxword + "j";
+								break;
+							case "k":
+								maxword = maxword + "k";
+								break;
+							case "l":
+								maxword = maxword + "l";
+								break;
+							case "m":
+								maxword = maxword + "m";
+								break;
+							case "n":
+								maxword = maxword + "n";
+								break;
+							case "o":
+								maxword = maxword + "o";
+								break;
+							case "p":
+								maxword = maxword + "p";
+								break;
+							case "q":
+								maxword = maxword + "q";
+								break;
+							case "r":
+								maxword = maxword + "r";
+								break;
+							case "s":
+								maxword = maxword + "s";
+								break;
+							case "t":
+								maxword = maxword + "t";
+								break;
+							case "u":
+								maxword = maxword + "u";
+								break;
+							case "v":
+								maxword = maxword + "v";
+								break;
+							case "w":
+								maxword = maxword + "w";
+								break;
+							case "x":
+								maxword = maxword + "x";
+								break;
+							case "y":
+								maxword = maxword + "y";
+								break;
+							case "z":
+								maxword = maxword + "z";
+								break;
+						};
+					};
+					return maxword;
+				};
+			</code></pre>
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function8.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function TestOfMas(mas){
+					let counter = 0;
+
+					for(let i = 0;i < mas.length;i+=1){
+						let test = true;
+
+					
+						if(i == 0){
+							counter += 1;
+						}
+						else
+						{	
+							let LocalElement = mas[i];
+							for(let i1 = 0;i1 < i;i1+=1){
+								if(LocalElement == mas[i1]){
+									test = false;
+								};
+							};
+							if(test == true){
+								counter += 1;
+							};
+						};
+					};
+
+					return counter;
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function9.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function factorial(number){
+					let FinishedNumber = 1;
+					for(let i = 1;i <= number;i += 1){
+						FinishedNumber = FinishedNumber * i;
+					};
+					return FinishedNumber;
+				};
+
+				function olimp(FirstNumber, SecondNumber){
+					FirstNumber = factorial(FirstNumber);
+					SecondNumber = factorial(SecondNumber);
+
+					
+					let max = 0;
+
+					for(let i = 0;i < Math.max(FirstNumber, SecondNumber);i += 1){
+						if((FirstNumber % i === 0) & (SecondNumber % i === 0) & (i > max)){
+							max = i;
+						}
+						else
+						{
+							continue;
+						};
+					};
+
+					return max;	
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function10.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				'use strict'
+				function time(number){
+					let hours;
+					let minutes;
+					let LimitOfMinutes = 60;
+					let time;
+
+					function isDigit(str) {
+						return str && !/[^\d]/.test(str);
+					};
+
+					if(isDigit(number) === false){
+						return false;
+					};
+
+					if(number < LimitOfMinutes){
+						minutes = number;
+						hours = "00";
+
+						if(minutes < 10){
+							minutes = "0" +minutes;
+						};
+
+						time = hours +":" +minutes;
+						return time;
+					}
+					else{
+						let  remainder = number % LimitOfMinutes;
+						minutes = remainder;
+						number = number - remainder;
+						hours = number / LimitOfMinutes;
+
+						if(hours < 10){
+							hours = "0" +hours;
+						};
+						if(minutes < 10){
+							minutes = "0" + minutes;
+						};
+
+						time = hours +":" +minutes;
+						return time;
+					};
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function11.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function palindrom(number){
+					let number2;
+					let c;
+
+					function isDigit(str) {
+						return str && !/[^\d]/.test(str);
+					};
+					if(isDigit(number) === true){
+						number = number.toString();
+						c=(number.length)-1;
+						number2 = number[c];	
+						c=c-1;
+						for(c;c>=0;c--){
+							number2 = number2 + number[c];
+						};
+						if(number2 === number){
+							return true;
+						}
+						else{
+							return false;
+						};
+					}
+					else{
+						console.log("Были введены не только цифры.");
+					};
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function12.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function chockolate(n,m){
+					function isDigit(str) {
+						return str && !/[^\d]/.test(str);
+					};
+					if(isDigit(n) === false | isDigit(m) === false | +m<0 | +n<0){
+						return false;
+					};
+					let height = m-1;
+					let length = n-1;
+					let NumberOfCut = height + length;
+					return NumberOfCut;
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function13.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function ExtentOfTwo (number){
+					function isDigit(str){
+						return str && !/[^\d]/.test(str);
+					};
+					if(isDigit(number) === false | number < 0 | Math.round(number) != number){
+						return false;
+					};
+					while(number != 2){
+						if(number % 2 != 0){
+							return false;
+							break;
+						};
+						number = number / 2;
+					};
+					return true;
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function14.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function numbers(){
+				let i1;
+				for(let i=100;i<1000;i++){
+					i1 = i.toString();
+					if((i1[0])!=(i1[1])&(i1[0])!=(i1[2])&(i1[1])!=(i1[2])){
+						console.log(i);
+					};
+				};		
+			};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function15.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function divisor(FirstNumber,SecondNumber){
+					if(FirstNumber<0 | SecondNumber<0 | Math.round(FirstNumber)!=FirstNumber | Math.round(SecondNumber)!=SecondNumber){
+						return false;
+					};
+					let GratestDivisor = 0;
+					for(i=0;i<=Math.min(FirstNumber,SecondNumber);i++){
+						if(FirstNumber%i === 0 & SecondNumber%i === 0){
+							if(GratestDivisor < i){
+								GratestDivisor = i;
+							};
+						};
+					};
+					return(GratestDivisor);
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function16.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function salary(First,Second,Third){
+					if(First<0 | Second<0 | Third<0 | Math.round(First)!=First | Math.round(Second)!=Second | Math.round(Third)!=Third){
+						return false;
+					};
+					let max = Math.max(First,Second,Third);
+					let min = Math.min(First,Second,Third);
+					return(max-min);
+				};	
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function17.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function equation(a,b,c,d){
+					let answer = [];
+					for(x=-100;x<101;x+=1){
+						if(a*x**3+b*x**2+c*x+d === 0){
+							answer.unshift(x);
+						};
+					};
+					return answer;
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function18.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function equation(k,b){
+					console.log(k+"x"+"+"+b+"=0");
+					console.log(k+"x"+"="+(-b));
+					console.log("x="+(-b/k));
+				};	
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function19.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function chess(KNumber1,KNumber2,FNumber1,FNumber2){
+					function isDigit(str) {
+						return str && !/[^\d]/.test(str);
+					};
+					if(isDigit(KNumber1)===false | isDigit(FNumber1)===false | KNumber1>8 | KNumber1<1 | FNumber1>8 | FNumber1<1 |
+					Math.round(KNumber1)!=KNumber1 | Math.round(FNumber1)!=FNumber1 | (KNumber1 === FNumber1&KNumber2 === FNumber2) | KNumber2>8 | KNumber2<1 | FNumber2>8 | FNumber2<1
+					| Math.round(KNumber2)!=KNumber2 | Math.round(FNumber2)!=FNumber2 | isDigit(KNumber2)===false | isDigit(FNumber2) === false){
+						return false;
+					};
+
+					let L;
+					let F;
+					let K;
+					let All;
+					F = 14;
+					L = 14;
+					if((KNumber1 === 1&KNumber2 === 1) | (KNumber1 === 8&KNumber2 === 1) | (KNumber1 === 1&KNumber2 === 8) | (KNumber1 === 8&KNumber2 === 8)){
+						K = 2;
+					}else
+					if(KNumber1>2 & KNumber1<7 & KNumber2>2 & KNumber2<7){
+						K = 8;
+					}else
+					if((KNumber1>2&KNumber1<7&KNumber2===1) | (KNumber1===1&KNumber2>2&KNumber2<7) | (KNumber1>2&KNumber1<7&KNumber2===8) | (KNumber1===8&KNumber2>2&KNumber2<7) |
+					(KNumber1===2&KNumber2===2) | (KNumber1===2&KNumber2===7) | (KNumber1===7&KNumber2===7) | (KNumber1===7&KNumber2===2)){
+						K = 4;
+					}else
+					if((KNumber1===2&KNumber2===1) | (KNumber1===1&KNumber2===2) | (KNumber1===1&KNumber2===7) | (KNumber1===2&KNumber2==8) | (KNumber1===7&KNumber2===8) | 
+					(KNumber1===8&KNumber2===7) | (KNumber1===7&KNumber2===1) | (KNumber1===8&KNumber2===2)){
+						K = 3;
+					}else{
+						K = 6;
+					};
+					if(FNumber1>3&FNumber1<6&FNumber2>3&FNumber2<6){
+						F = F + 13;
+					}else
+					if((FNumber1>2&FNumber1<7&FNumber2===3) | (FNumber1===3&FNumber2>2&FNumber2<7) | (FNumber1>2&FNumber1<7&FNumber2===6) | (FNumber1===6&FNumber2>2&FNumber2<7)){
+						F = F + 11;
+					}else
+					if(FNumber1 === 1 | FNumber2 === 1 | FNumber1 === 8 | FNumber2 === 8){
+						F = F + 7;
+					}else
+					if((FNumber1>1&FNumber1<8&FNumber2===2) | (FNumber1===2&FNumber2>1&FNumber2<8) | (FNumber1>2&FNumber1<8&FNumber2===7) | (FNumber1===7&FNumber2>2&FNumber2<8)){
+						F = F + 9;
+					}
+					All = F+L+K;
+					L = "Ладья бьёт " +L +" полей.";
+					K = "Конь бьёт " +K +" полей.";
+					F = "Ферзь бьёт " +F +" полей.";
+					All = "Всего " +All +" полей под боем.";
+					let answer = "\n"+L+"\n"+K+"\n"+F+"\n"+All+"\n";
+					return answer;
+				};
+			</code></pre>
+		</div>
+
+		<div>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function20.1.png'>
+			<img src = '..\Images\Functions\function20.2.png'>
+			<img src = '..\Images\Functions\function20.3.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function a(){
+					var i;
+					var a=[];
+					while((i=prompt("Введите число.\nЕсли хотите закончить набор чисел, то нажмите \"Отмена.\""))!==null){
+						a.push(i);
+					};
+					for(var x=0;(x+1)!=a.length;x++){
+						if(a[x]===a[x+1]){
+							var c="Да.";
+							break;
+						}
+						else
+						{
+							var c;
+						};
+					};
+					if(c!='Да.'){
+						alert("Нет.")
+					}
+					else
+					{
+						alert(c);
+					};
+				};
+				function a2(){
+					var a=prompt("Введите шесть чисел.");
+					if(((+a[0])+(+a[1])+(+a[2]))===((+a[3])+(+a[4])+(+a[5]))){
+						alert('Да.');
+					}
+					else
+					{
+						alert('Нет.');
+					};
+				};
+				function a3(){
+					var b=[];
+					var h=[];
+					var c='';
+					for(var a;a!='';){
+						var a=prompt("Введите число.");
+						b.push(a);
+					};
+					for(var i=0;i!=b.length;i++){
+						b1=String;
+						c=b[i];
+						if((+c[0])===1|(+c[0])===2|(+c[0])===5){
+							h.push(c);
+						}
+						else
+						{
+							continue;
+						};
+					};
+					alert(h);
+				}
+				function a4(){
+					var a=prompt("Введите число.");
+					function c(){
+						var x=0;
+						while(a>0){
+							x+=a%10;
+							a=Math.floor(a/10);
+						};
+						a=x;
+						return a;
+					};
+					c();
+					alert(a);
+					while(a>=9){
+						if(a>=9){
+							c();
+							alert(a);
+						}
+						else
+						{
+							break;
+						};
+					};
+				};
+				function a5(){
+					for(var i=0;i<10;i++){
+						for(var a=0;a!=i;a++){
+							console.log(i);
+						};
+					};
+				};
+				function a6(){
+					function getDivisors(){
+					for(var b=1;b!=a;b++){
+						if(a%b===0){
+							c.push(b);
+						}
+						else
+						{
+							continue;
+						};
+					};
+					};
+					var a=+prompt("Введите число.");
+					var c=[];
+					getDivisors();
+					c.push(a);
+					alert("Делители числа "+a+": "+c+".");
+				};
+				function a7(){
+					function isEven(){
+						if(a%2===0){
+							alert("true")
+						}
+						else
+						{
+							alert("false");
+						};
+					};
+					var a=+prompt("Введите число.");
+					isEven();
+				};
+				while (a1!==10){
+					var a1=+prompt("Введите число от 1 до 10.\n1)Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.\n2)Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.\n3)Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.\n4)Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры. И так, пока сумма не станет однозначным числом (9 и менее).\n6)С помощью двух вложенных циклов нарисуйте пирамидку.\n7)Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится данное число).\n8)Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное оно или нет. Если четное - пусть функция возвращает true, если нечетное - false.\n10)Выход.");
+					while(true){
+						if(a1>10|a1<1){
+							console.log("Введено число больше двух или меньше единицы или не введено ничего.");
+							var a1=+prompt("Введите число от 1 до 10.\n1)Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.\n2)Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.\n3)Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.\n4)Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры. И так, пока сумма не станет однозначным числом (9 и менее).\n6)С помощью двух вложенных циклов нарисуйте пирамидку.\n7)Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится данное число).\n8)Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное оно или нет. Если четное - пусть функция возвращает true, если нечетное - false.\n10)Выход");
+						}
+						else
+						{
+							break;
+						};
+					};
+					if(a1===1){
+						a();
+					}
+					else
+					if(a1===2){
+						a3()
+					}
+					else
+					if(a1===3){
+						a2();
+					}
+					else
+					if(a1===4){
+						a4();
+					}
+					else
+					if(a1===6){
+						a5();
+					}
+					else
+					if(a1===7){
+						a6();
+					}
+					else
+					if(a1===8){
+						a7();
+					}
+					else
+					if(a1===10){
+						break;
+					};
+				};
+			</code></pre>
+		</div>
+
+		<div style = 'margin-bottom: 0px;'>
+			<span style = 'font-size: 50px'>Статус: закончена</span>
+			<img src = '..\Images\Functions\function21.1.png'>
+			<img src = '..\Images\Functions\function21.2.png'>
+			<span style = 'font-size: 50px'>JS</span>
+			<pre class = 'code'><code class="language-css">
+				function a(){//Решение системы 2-х уравнений с двумя неизвестными(8).
+					var a1=prompt("Введите 1 коэффициент.");
+					var b1=prompt("Введите 2 коэффициент.");
+					var c1=prompt("Введите Первый свободный член.");
+					var a2=prompt("Введите 3 коэффициент.");
+					var b2=prompt("Введите 4 коэффициент.");
+					var c2=prompt("Введите Второй свободный член.");
+					var z=c2*b1;
+					var z1=c1*b2;
+					var z2=a1*b2;
+					var z3=a2*b1;
+					var l=z-z1;
+					var l1=z2-z3;
+					var x=l/l1;
+					var q=a2*x;
+					var q1=(-c2)-q;
+					var y=q1/b2;
+					console.log("Ответ: X="+x +";Y=" +y);
+				};
+				function b(){//Поиск максимального элемента во множестве(12).
+					var i=1;
+					var a=[];
+					while((i=prompt("Введите число.\nЕсли хотите закончить набор чисел, то нажмите \"Отмена.\""))!==null){
+						i=+i;
+						a.push(i);
+					};
+					console.log("Наибольшиый элемент множества равен " +Math.max(...a)+".");
+				};
+				function c(){//Поиск минимального элемента во множестве(13).
+					var i=1;
+					var a=[];
+					while((i=prompt("Введите число.\nЕсли хотите закончить набор чисел, то нажмите \"Отмена.\""))!==null){
+						i=+i;
+						a.push(i);
+					};
+					a.pop();
+					console.log("Наименьшиый элемент множества равен " +Math.min(...a)+".");
+				};
+				function d(){//Подсчет суммы цифр числа(15).
+					var y=prompt("Введите число.");
+					var x=0;
+					while(y>0){
+						x +=y%10;
+						y=Math.floor(y/10);
+					};
+					console.log("Сумма цифр числа равна "+x);	
+				};
+				function e(){//Поиск среднего арифметического во множестве(14).
+					var i;
+					var z=0;
+					var a=[];
+					while((i=prompt("Введите число.\nЕсли хотите закончить набор чисел, то нажмите \"Отмена.\""))!==null){
+						i=+i;
+						a.push(i);
+						z+=i;
+					};
+					var h=a.length;
+					console.log("Среднее арифметическое во множестве равно "+z/h+".");
+				};
+				function z(){//Обработка текста: перевод в заглавные буквы(6).
+					var a=prompt("Введите текст.");
+					console.log(a.toUpperCase());
+				};
+				function z1(){//Обработка текста: перевод в маленькие буквы(5).
+					var a=prompt("Введите текст.");
+					console.log(a.toLowerCase());
+				};
+				function z2(){//Обработка текста: подсчет количества слов в тексте(1).
+					var a=prompt("Введите текст.");
+					var l=1;
+					for(var z=0;z!=a.length;z++){
+						if(a[z]===' '){
+							l=l+1;
+						}
+						else
+						{
+							continue;
+						}
+					};
+					console.log("Кол-во слов в тексте ="+l+".");
+				};
+				function z3(){//Обработка текста: разрешение ввода только цифр(4).
+					var someStr=prompt("Введите только числа.");
+					function isDigit(str) {
+						return str && !/[^\d]/.test(str);
+					};
+					var a=isDigit(someStr);
+					while(true){
+						if(a===true){
+							break
+							console.log(a);
+						}
+						else
+						{
+							console.log("Были введны буквы.")
+							var someStr=prompt("Введите только числа.");
+							var a=isDigit(someStr);
+						};
+					};
+				};
+				function z4(){//Обработка текста: выделение чисел из текста(3).
+					var a=prompt("Введите текст.");
+					var b=[];
+					function isDigit(str){
+						return str && !/[^\d]/.test(str);
+					};
+					for(var i=0;i!==a.length;i++){
+						if(isDigit(a[i])===true){
+							b.push(a[i]);
+						}
+						else
+						{
+							continue;
+						};	
+					};
+					console.log(b);
+				};
+				function z5(){//Обработка текста: выделение слов из текста(2).
+					var a=prompt("Введите текст.");
+					var b=[];
+					function isDigit(str){
+						return str && !/[^\d]/.test(str);
+					};
+					for(var i=0;i!==a.length;i++){
+						if(isDigit(a[i])===false){
+							b.push(a[i]);
+						}
+						else
+						{
+							continue;
+						};	
+					};
+					console.log(b);
+				};
+				function z6(){//Перевода десятичного числа в двоичное(10).
+					var a=+prompt("Введите десятичное число.");
+	    			a=a.toString(2);
+	    			console.log(a);
+				}
+				function z7(){//Перевода двоичного числа в десятичное(11).
+					var a=+prompt("Введите двоичное число.");
+	    			a=parseInt(a,2);
+	    			console.log(a);
+				}
+				function z8(){//Решение системы 3-х уравнений с тремя неизвестными(9).
+					var a1=+prompt("Введите 1 коэффициент.");
+					var b1=+prompt("Введите 2 коэффициент.");
+					var c1=+prompt("Введите 3 коэффициент.");
+					var d1=+prompt("Введите 1 свободный член.");
+					var a2=+prompt("Введите 4 коэффициент.");
+					var b2=+prompt("Введите 5 коэффициент.");
+					var c2=+prompt("Введите 6 коэффициент.");
+					var d2=+prompt("Введите 2 свободный член.");
+					var a3=+prompt("Введите 7 коэффициент.");
+					var b3=+prompt("Введите 8 коэффициент.");
+					var c3=+prompt("Введите 9 коэффициент.");
+					var d3=+prompt("Введите 3 свободный член.");
+					var e=a1*b2*c3+b1*c2*a3+c1*a2*b3-a3*b2*c1-b3*c2*a1-c3*a2*b1;           
+					var ex=(-d1)*b2*c3+b1*c2*d3+c1*(-d2)*b3-d3*b2*c1-b3*c2*(-d1)-c3*(-d2)*b1;           
+		 			var ey=a1*d2*c3+(-d1)*c2*a3+c1*a2*(-d3)-a3*(-d2)*c1-(-d3)*c2*a1-c3*a2*(-d1);           
+					var ez=a1*b2*(-d3)+b1*(-d2)*a3+(-d1)*a2*b3-a3*b2*(-d1)-b3*(-d2)*a1-(-d3)*a2*b1;
+		    		var x=ez/e;
+		    		var y=ey/e;
+		    		var z=ez/e;
+		    		console.log(+x+" "+y+" "+z)
+				}
+				function z9(){//Обработка текста: удаление из текста комметариев типа {...}(7).
+					var a=prompt("Введите текст.");
+					for(var h=0;h!=a.length;h++){
+						if(a[h]==='{'){
+							var b=a.slice(0,h);
+							break;
+						}
+						else
+						{
+							continue;
+						};
+					};
+					for(h;h!=a.length;h++){
+						if(a[h]==='}'){
+							var b1=h+1;
+							var b1=a.slice(b1);
+							break;
+						}
+						else
+						{
+							continue;
+						};
+					};
+					var a=b+b1;
+					console.log(a);
+				};
+				function d1(){//Выход(16).
+					break;
+				};
+				while (a1!==16){
+					var a1=+prompt("Введите цифру от 1 до 16.\n1)Обработка текста: подсчет количества слов в тексте.\n2)Обработка текста: выделение слов из текста.\n3)Обработка текста: выделение чисел из текста.\n4)Обработка текста: разрешение ввода только цифр.\n5)Обработка текста: перевод в маленькие буквы.\n6)Обработка текста: перевод в заглавные буквы.\n7)Обработка текста: удаление из текста комметариев типа {...}.\n8)Решение системы 2-х уравнений с двумя неизвестными.\n9)Решение системы 3-х уравнений с тремя неизвестными.\n10)Перевода десятичного числа в двоичное.\n11)Перевода двоичного числа в десятичное.\n12)Поиск максимального элемента во множестве.\n13)Поиск минимального элемента во множестве.\n14)Поиск среднего арифметического во множестве.\n15)Подсчет суммы цифр числа.\n16)Выход.");
+					while(true){
+						if(a1>16|a1<1){
+							console.log("Введено число больше десяти или меньше единицы или не введено ничего.");
+							var a1=+prompt("Введите цифру от 1 до 16.\n1)Обработка текста: подсчет количества слов в тексте.\n2)Обработка текста: выделение слов из текста.\n3)Обработка текста: выделение чисел из текста.\n4)Обработка текста: разрешение ввода только цифр.\n5)Обработка текста: перевод в маленькие буквы.\n6)Обработка текста: перевод в заглавные буквы.\n7)Обработка текста: удаление из текста комметариев типа {...}.\n8)Решение системы 2-х уравнений с двумя неизвестными.\n9)Решение системы 3-х уравнений с тремя неизвестными.\n10)Перевода десятичного числа в двоичное.\n11)Перевода двоичного числа в десятичное.\n12)Поиск максимального элемента во множестве.\n13)Поиск минимального элемента во множестве.\n14)Поиск среднего арифметического во множестве.\n15)Подсчет суммы цифр числа.\n16)Выход.");			
+						}
+						else
+						{
+							break;
+						};
+					};
+					if(a1===1){
+						z2();
+					}
+					else
+					if(a1===2){
+						z5();
+					}
+					else
+					if(a1===3){
+						z4();
+					}
+					else
+					if(a1===4){
+						z3();
+					}
+					else
+					if(a1===5){
+						z1();
+					}
+					else
+					if(a1===6){
+						z();
+					}
+					else
+					if(a1===7){
+						z9();
+					}
+					else
+					if(a1===8){
+						a();
+					}
+					else
+					if(a1===9){
+						z8();
+					}
+					else
+					if(a1===10){
+						z6();
+					}
+					else
+					if(a1===11){
+						z7();
+					}
+					else
+					if(a1===12){
+						b();
+					}
+					else
+					if(a1===13){
+						c();
+					}
+					else
+					if(a1===14){
+						e();
+					}
+					else
+					if(a1===15){
+						d()
+					}
+					else
+					if(a1===16){
+						d1();
+					};
+				};
+			</code></pre>
+		</div>
+		
+		<script src="prism.js"></script>
+	</body>
+</html>
