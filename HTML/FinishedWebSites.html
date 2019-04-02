@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background: #638bcc;
+				color: #f2f2f2;
+				font-family: sans-serif;
+
+			}
+			div{
+				margin-bottom: 100px;
+				font-size: 25px;
+			}
+			img{
+				display: block;
+				margin-bottom: 5px;
+				width: 60%;
+				height: 30em;
+				border-radius: 5px;
+			}
+			button{
+				font-size: 20px;
+				border-radius: 7px;
+				color: #afaeae;
+				background-color: #38527c;
+				outline: none;
+				border: 1px solid #628db2;
+				cursor: pointer;
+				font-weight: bold;
+				font-family: sans-serif;
+				margin-bottom: 20px;
+			}
+			button:active{
+				background-color: #5793c6;
+			}
+			button:hover{
+				box-shadow: 0 0 20px white;
+				color: white;
+			}
+			.last{
+				margin-bottom: 0px;
+			}
+			.code{
+				width: 58.2%;
+				border-radius: 5px;
+			}
+		</style>
+
+		<link href="..\HTML\prism.css" rel="stylesheet" />
+	</head>
+	<body>
+		<a href = '..\HTML\index.html'><button>Вернуться</button></a>
+		<div>
+			Поиск обоев для рабочего стола с помощью поисковой строки
+			<img src = '..\Images\FinishedWebSites\WebSite1.png'>
+			CSS
+			<pre class = 'code'><code class="language-css">
+				.main{
+				margin-left: 40%;
+				margin-top: 10%;
+				}
+				.text{
+					display: block;
+					width: 400px;
+					height: 33px;
+					border-radius: 3px;
+					margin-top: 1%;
+					border: 1px solid #4198f4;
+					text-align: center; 
+					display: block;
+					box-shadow: 0 0 30px #42c5f4;
+					color: #5b6063;
+					background-color: #d1f0ff;
+					font-weight: bold;
+					font-family: sans-serif;
+					margin-bottom: 20px;
+				}
+				.button{
+					width: 200px;
+					height: 33px;
+					border-radius: 7px;
+					color: #5b6063;
+					margin-left: 100px;
+					background-color: #d1f0ff;
+					outline: none;
+					box-shadow: 0 0 20px #42c5f4;
+					border: 1px solid #4198f4;
+					cursor: pointer;
+					font-family: sans-serif;
+					font-weight: bold;
+					cursor: pointer;
+				}
+				.button:hover{
+					background-color: #3e81a8;
+					color: white;
+					box-shadow: 0 0 20px #5edb3f;
+				}
+				.button:active{
+					background-color: #1876ce;
+				}
+			</code></pre>
+			JS
+			<pre class = 'code'><code class="language-css">
+				let input = document.querySelector('.text');
+				let button = document.querySelector('.button');
+
+				let first = 'https://www.google.com/search?q=';
+				let second = ' обои для рабочего стола&rlz=1C1ASUC_enRU796RU796&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjth4b4mcDfAhVQqIsKHREKCRwQ_AUIDigB&biw=1600&bih=1129';
+
+				button.addEventListener('click', function(){
+					let search = input.value;
+					search = first + search + second;
+					console.log(search);
+					location.href = search;
+				});
+			</code></pre>
+		</div>
+
+		<div>
+			Улучшенная поисковая панель. Поиск по закладкам и поисковым строкам.
+			<img src = '..\Images\FinishedWebSites\WebSite2.png'>
+			CSS
+			<pre class = 'code'><code class="language-css">
+				body{
+					background: linear-gradient(135deg, #a057db 20%, #2634f9 60%, #4402c9 30%);
+					height: 50em;
+				}
+				.main{
+					margin-left: 40%;
+					margin-top: 10%;
+				}
+				.main input{
+					display: block;
+					width: 400px;
+					height: 33px;
+					border-radius: 3px;
+					margin-top: 1%;
+					border: 1px solid #4198f4;
+					text-align: center; 
+					display: block;
+					box-shadow: 0 0 30px #42c5f4;
+					color: #5b6063;
+					background-color: #d1f0ff;
+					font-weight: bold;
+					font-family: sans-serif;
+					margin-bottom: 20px;
+				}
+				.main button{
+					width: 200px;
+					height: 33px;
+					border-radius: 7px;
+					color: #5b6063;
+					margin-left: 100px;
+					background-color: #d1f0ff;
+					outline: none;
+					box-shadow: 0 0 20px #42c5f4;
+					border: 1px solid #4198f4;
+					cursor: pointer;
+					font-family: sans-serif;
+					font-weight: bold;
+					cursor: pointer;
+				}
+				.main button:hover{
+					background-color: #3e81a8;
+					color: white;
+					box-shadow: 0 0 20px #5edb3f;
+				}
+				.main button:active{
+					background-color: #1876ce;
+				}
+				.div1, .div2, .div3{
+					margin-top: 20px;
+					margin-left: 112px;
+				}
+				.main div button{
+					margin-left: 0px;
+					width: 40px;
+					height: 40px;
+					border-radius: 100%;
+					color: black;
+					background-color: #d1f0ff;
+					outline: none;
+					box-shadow: 0 0 20px #42c5f4;
+					border: 1px solid #4198f4;
+					cursor: pointer;
+					font-family: sans-serif;
+					font-weight: bold;
+					cursor: pointer;
+				}
+				.h1{
+					margin-left: 40%;
+					font-family: sans-serif;
+					background: linear-gradient(135deg, #ef2db4 25%, #50c1e0 20%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				.vk, .vkmusic, .instagram, .translator, .PaletteOfColors, .Alisization, .DayBook, .Github, .Mail, .Skype{
+					font-size: 22px;
+				}
+				button:hover{
+					background-color: #3e81a8;
+					color: white;
+					box-shadow: 0 0 20px #5edb3f;
+				}
+				button:active{
+					background-color: #1876ce;
+				}
+				.div3 .Mail{
+					margin-left: 44px;
+				}
+			</code></pre>
+			<pre class = 'code'><code class="language-css">
+				let searching = document.querySelector('.searching');
+				let button0 = document.querySelector('.button0');
+
+				let picture = document.querySelector('.picture');
+				let button1 = document.querySelector('.button1');
+
+				let video = document.querySelector('.video');
+				let button2 = document.querySelector('.button2');
+
+				let map = document.querySelector('.map');
+				let button3 = document.querySelector('.button3');
+
+				let youtube = document.querySelector('.youtube');
+				let button4 = document.querySelector('.button4');
+
+
+				let vk = document.querySelector('.vk');
+				let vkmusic = document.querySelector('.vkmusic');
+				let instagram = document.querySelector('.instagram');
+				let translator = document.querySelector('.translator');
+				let PaletteOfColors = document.querySelector('.PaletteOfColors');
+				let Alisization = document.querySelector('.Alisization');
+				let DayBook = document.querySelector('.DayBook');
+				let Github = document.querySelector('.Github');
+				let Mail = document.querySelector('.Mail');
+				let Skype = document.querySelector('.Skype');
+
+				searching.value = '';
+				picture.value = '';
+				video.value = '';
+				map.value = '';
+				youtube.value = '';
+
+
+				let firstS = 'https://www.google.com/search?q=';
+				let secondS = '&rlz=1C1ASUC_enRU796RU796&oq=поиск&aqs=chrome.0.69i59j69i61j0j69i61j69i59j35i39.1311j1j7&sourceid=chrome&ie=UTF-8';
+
+				let firstP = 'https://www.google.com/search?q=';
+				let secondP = ' &rlz=1C1ASUC_enRU796RU796&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjth4b4mcDfAhVQqIsKHREKCRwQ_AUIDigB&biw=1600&bih=1129';
+
+				let firstV = 'https://www.google.com/search?q=';
+				let secondV = '&rlz=1C1ASUC_enRU796RU796&source=lnms&tbm=vid&sa=X&ved=0ahUKEwja7dXupMDfAhUPqYsKHfC6AnAQ_AUIDygC&biw=1584&bih=1116';
+
+				let firstM = 'https://www.google.com/maps/search/';
+				let secondM = '/@59.8439318,30.2459787,12z/data=!3m1!4b1';
+
+				let firstY = 'https://www.youtube.com/results?search_query=';
+
+
+				searching.addEventListener('keyup', function(){
+					if(event.keyCode === 13){
+						button0.click();
+					};
+				});
+
+				picture.addEventListener('keyup', function(){
+					if(event.keyCode === 13){
+						button1.click();
+					};
+				});
+
+				video.addEventListener('keyup', function(){
+					if(event.keyCode === 13){
+						button2.click();
+					};
+				});
+
+				map.addEventListener('keyup', function(){
+					if(event.keyCode === 13){
+						button3.click();
+					};
+				});
+
+				youtube.addEventListener('keyup', function(){
+					if(event.keyCode === 13){
+						button4.click();
+					};
+				});
+
+
+				button0.addEventListener('click', function(){
+					let search = searching.value;
+					search = firstS + search + secondS;
+					location.href = search;
+				});
+
+				button1.addEventListener('click', function(){
+					let search = picture.value;
+					search = firstP + search + secondP;
+					location.href = search;
+				});
+
+				button2.addEventListener('click', function(){
+					let search = video.value;
+					search = firstV + search + secondV;
+					location.href = search;
+				});
+
+				button3.addEventListener('click', function(){
+					let search = map.value;
+					search = firstM + search + secondM;
+					location.href = search;
+				});
+
+				button4.addEventListener('click', function(){
+					let search = youtube.value;
+					search = firstY + search;
+					location.href = search;
+				});
+
+
+				vk.addEventListener('click', function(){
+					location.href = 'https://vk.com/im';
+				});
+
+				vkmusic.addEventListener('click', function(){
+					location.href = 'https://vk.com/audios223755690';
+				});
+
+				instagram.addEventListener('click', function(){
+					location.href = 'https://www.instagram.com/';
+				});
+
+				translator.addEventListener('click', function(){
+					location.href = 'https://www.google.ru/search?newwindow=1&rlz=1C1ASUC_enRU796RU796&ei=xHzCW-u_I6GorgT2yqroAg&q=%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA&oq=%D0%BF%D0%B5%D1%80%D0%B5&gs_l=psy-ab.1.0.35i39l2j0i131j0l2j0i131l3j0l2.270690.271017..271573...0.0..0.37.141.4......0....1..gws-wiz.......0i67.ArrJ8l5XoZI';
+				});
+
+				PaletteOfColors.addEventListener('click', function(){
+					location.href = 'https://www.google.ru/search?newwindow=1&rlz=1C1ASUC_enRU796RU796&ei=XoMZW-aoL4O8swH7wqR4&q=%D0%BF%D0%B0%D0%BB%D0%B8%D1%82%D1%80%D0%B0+%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2+css&oq=%D1%86%D0%B2%D0%B5%D1%82%D0%B0+html&gs_l=psy-ab.1.7.0i71k1l8.0.0.0.9287.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.-CV9J9BfuJY';
+				});
+
+				Alisization.addEventListener('click', function(){
+					location.href = 'https://www.anilibria.tv/release/sword-art-online-alicization.html'
+				});
+
+				DayBook.addEventListener('click', function(){
+					location.href = 'https://petersburgedu.ru/dnevnik';
+				});
+
+				Github.addEventListener('click', function(){
+					location.href = 'https://github.com/Crimor16';
+				});
+
+				Mail.addEventListener('click', function(){
+					location.href = 'https://e.mail.ru/messages/inbox/?back=1';
+				});
+
+				Skype.addEventListener('click', function(){
+					location.href = 'https://web.skype.com/ru/?intsrc=client-_-webapp-_-production-_-go-signin';
+				});
+			</code></pre>
+		</div>
+
+		<div>
+			Необходимо сделать программу, обучающую сложению однозначных чисел с помощью числовой оси.<br>
+			Складываются 2 числа a и b, причем a ∈ [6, 9], a+b ∈ [11, 14].<br> 
+			Например, при a= 7 и b = 4, задача будет иметь вид: 7 + 4 = 11. <br>
+			Цель задания ­ правильно заполнять инпуты и решить пример.<br>
+			Сценарий:<br>
+			1. Появляется стрелка от 0 до a.<br>
+			Если число вводится неверно, число в инпуте краснеет, числа a подсвечивается желтым.<br>
+			Если число введено правильно, то инпут превращается в число.2. Появляется стрелка от a до a + b аналогично пункту 1.3.<br>
+			Вопрос в верхнем примере заменяется на инпут.<br>
+			Eсли число вводится неверно, число в инпуте краснеет.<br>
+			Eсли число введено правильно, инпут превращается в число, пример решен правильно!<br>
+
+			<img src = '..\Images\FinishedWebSites\WebSite3.1.png'>
+			<img src = '..\Images\FinishedWebSites\WebSite3.2.png'>
+			<img src = '..\Images\FinishedWebSites\WebSite3.3.png'>
+			<img src = '..\Images\FinishedWebSites\WebSite3.4.png'>
+			CSS
+			<pre class = 'code'><code class="language-css">
+				#h{
+					margin-left: 40%;
+					margin-top: 8%;
+					display: inline-block;
+				};
+				#div2{
+					width: 100%;
+					display: inline-block;
+				};
+				#div3{
+					width: 100%;
+					display: inline-block;
+				};
+				#CommonDiv{
+					width: 100%;
+					margin-top: 100px;
+					display: inline-block;
+				};
+			</code></pre>
+			JS
+			<pre class = 'code'><code class="language-css">
+				function isDigit(str) {
+					return str && !/[^\d]/.test(str);
+				};
+				let a = Math.round(Math.random() * (9 - 6) + 6);
+
+				let c = Math.round(Math.random() * (14 - 11) + 11);
+
+				let b = c - a;
+
+				let canvas = document.querySelector("canvas");
+				let ctx = canvas.getContext('2d');
+
+				let div = document.querySelector("div");
+				let div2 = document.querySelector("#div2");
+				let div3 = document.querySelector("#div3")
+
+				let h1 = document.querySelector("#h");
+				let spanA = document.querySelector("#a");
+				let spanPLUS = document.querySelector("#plus");
+				let spanB = document.querySelector("#b");
+				let spanC = document.querySelector("#c");
+				let x1 = 100;
+				let x2 = 300;
+				let CreateInput = document.createElement('input');
+
+				let input2;
+				let input3;
+				let value2;
+				let value3;
+				CreateInput.style.width = '25px';
+				CreateInput.style.height = '30px';
+				CreateInput.style.textAlign = 'center';
+				CreateInput.style.fontSize = '35px';
+				CreateInput.style.marginLeft = x1+33+a*2 +'px';
+
+				h.appendChild(spanA).innerHTML = a;
+				h.appendChild(spanPLUS).innerHTML = "+";
+				h.appendChild(spanB).innerHTML = b;
+				h.appendChild(spanC).innerHTML = " = ?";
+
+				let TrueA = document.createElement('h1');
+				let TrueB = document.createElement('h1');
+
+				TrueA.style.display = 'inline-block';
+				TrueA.style.marginLeft = x1+33+a*2 +'px';
+
+				TrueB.style.display = 'inline-block';
+				TrueB.style.marginLeft = x2-70 +'px';
+
+				ctx.beginPath();
+					ctx.moveTo(-30, 150); //Начальная точка
+					ctx.quadraticCurveTo(x1, -140, a*48, 150);// для 6
+					//ctx.quadraticCurveTo(180/*Контрольная точка(x)*/, 10/*Контрольная точка(y)*/, 320/*Конечная точка(x)*/, 150/*Конечная(y)*/);
+					ctx.lineWidth = 5;                                                 
+					ctx.stroke();
+				ctx.closePath();
+
+				ctx.beginPath();
+					ctx.arc(a*39, 81, 6, 0, 2*Math.PI, false);
+					ctx.fill();
+				ctx.closePath();
+
+				div2.appendChild (CreateInput);
+
+				let input1 = document.querySelector("#div2 input");
+				let value;
+				input1.addEventListener('keyup', function (){
+					value = input1.value;
+					if(isDigit(value) === false){
+						input1.value = '';
+					};
+					if(value.length > 1){
+						input1.value = value[0];
+					};
+					if(+value === a){
+						CreateInput.style.border = '';
+						CreateInput.style.color = '';
+						spanA.style.background = '';
+						if(event.keyCode === 13){
+							div2.removeChild(input1);
+							div2.appendChild(TrueA).innerHTML = a;
+
+							let CreateInput2 = document.createElement('input');
+
+							CreateInput2.style.width = '25px';
+							CreateInput2.style.height = '30px';
+							CreateInput2.style.textAlign = 'center';
+							CreateInput2.style.fontSize = '35px';
+							CreateInput2.style.marginLeft = x2+100 +'px';
+							CreateInput2.id = "input2";
+
+							div3.appendChild(CreateInput2).innerHTML; 
+
+							ctx = canvas.getContext('2d');
+							ctx.beginPath();
+								ctx.moveTo(a*39, 150); //Начальная точка
+								ctx.quadraticCurveTo(x2,-90,a*40+b*55, 150);
+								ctx.lineWidth = 5;                                                                    
+								ctx.stroke();
+							ctx.closePath();
+
+							ctx.beginPath();
+								ctx.arc(a*37+b*42, 81, 6, 0, 2*Math.PI, false);
+								ctx.fill();
+							ctx.closePath();
+							CreateInput.value = '';
+							input2 = document.getElementById('input2');
+							input2.addEventListener('keyup', function(){
+								value2 = input2.value;
+								if(isDigit(value2) === false){
+									input2.value = '';
+								};
+								if(value2.length > 1){
+									input2.value = value2[0];
+								};
+								if(+value2 === b){
+									CreateInput2.style.color = '';
+									CreateInput2.style.background = '';
+
+									spanB.style.background = '';
+									if(event.keyCode === 13){
+										div3.removeChild(input2);
+										div2.appendChild(TrueB).innerHTML = b;
+										div.appendChild(h1).innerHTML = a +"+" +b +" = ";
+
+										let CreateInput3 = document.createElement('input');
+										CreateInput3.style.width = '50px';
+										CreateInput3.style.height = '30px';
+										CreateInput3.style.textAlign = 'center';
+										CreateInput3.style.fontSize = '35px';
+										CreateInput3.id = "input3";
+										div.appendChild(CreateInput3).innerHTML; 
+
+										input3 = document.getElementById('input3');
+										input3.addEventListener('keyup', function (){
+											value3 = input3.value;
+											if(isDigit(value3) === false){
+												input3.value = '';
+											};
+											if(value3.length > 2){
+												input3.value = value3[0] +value3[1];
+											};
+											if(+value3 === c){
+												CreateInput3.style.border = '';
+												CreateInput3.style.color = '';
+												if(event.keyCode === 13){
+													div.removeChild(input3);
+													div.appendChild(h1).innerHTML = a +"+" +b +" = " +c;
+
+												};	
+											}
+											else{
+												CreateInput3.style.color = 'red'																
+											}	
+										});
+									};	
+								}
+								else{
+									CreateInput2.style.color = 'red'
+									spanB.style.background = 'orange';
+								};
+							});
+						};	
+					}
+					else{
+						CreateInput.style.color = 'red';
+						spanA.style.background = 'orange';
+					}
+				});	
+			</code></pre>
+		</div>
+
+		<div>
+			Интерактивная галерея. Возможность приблежения и отдаления фотографии.<br> При приближении всё кроме приближенной картинки затемняется.
+
+			<img src = '..\Images\FinishedWebSites\WebSite4.1.png'>
+			<img src = '..\Images\FinishedWebSites\WebSite4.2.png'>
+			CSS
+			<pre class = 'code'><code class="language-css">
+				.main img{
+					cursor: pointer;
+					position: absolute;
+					width: 200px;
+					height: 200px;
+				}
+				.back{
+					position: fixed;
+					width: 99%;
+					height: 97vh;				
+				}
+				.main{
+					margin-left: 25%;
+					position: absolute;
+				}
+			</code></pre>
+			JS
+			<pre class = 'code'><code class="language-css">
+				function gallery(){
+					let FirstImage = document.querySelector('.FirstImage');
+					let SecondImage = document.querySelector('.SecondImage');
+					let ThirdImage = document.querySelector('.ThirdImage');
+					let FourthImage = document.querySelector('.FourthImage');
+					let FithImage = document.querySelector('.FithImage');
+					let SixthImage = document.querySelector('.SixthImage');
+					let SeventhImage = document.querySelector('.SeventhImage');
+					let EighthImage = document.querySelector('.EighthImage');
+					let back = document.querySelector('.back');
+
+					function approximation(){
+						if(this.style.width != undefined){
+							if(this.style.width == ''){
+								this.style.width = '500px';
+								this.style.height = '500px';
+								this.style.zIndex = '100';
+								this.style.transition = 'width 1s, height 1s';
+								back.style.background = 'rgba(0, 0, 0, 0.5)';
+								back.style.transition = 'background 1s';
+								back.style.zIndex = '50';
+							}
+							else
+							{
+								this.style.width = '';
+								this.style.height = '';
+								this.style.zIndex = '';
+								back.style.background = '';
+								back.style.zIndex = '';
+							}
+						};
+					}
+
+					FirstImage.onclick = approximation;
+					SecondImage.onclick = approximation;
+					ThirdImage.onclick = approximation;
+					FourthImage.onclick = approximation;
+					FithImage.onclick = approximation;
+					SixthImage.onclick = approximation;
+					SeventhImage.onclick = approximation;
+					EighthImage.onclick = approximation;
+				}
+
+				gallery();
+			</code></pre>
+
+		</div>
+
+		<div class = 'last'>
+			Генератор паролей.<br> Можно выбрать количество символов в пароле<br> и сами символы (заглавные буквы, прописные буквы, цифры, символы).
+
+			<img src = '..\Images\FinishedWebSites\WebSite5.png'>
+			CSS
+			<pre class = 'code'><code class="language-css">
+				body{
+					background: linear-gradient(135deg, #8d86d6, #7570a3) no-repeat;
+					height: 97.5vh;
+					font-family: sans-serif;
+				}
+				.button{
+					cursor: pointer;
+					margin-left: 20%;
+					width: 20%;
+					height: 12vh;
+					background: linear-gradient(135deg, #4274f4, #8d86d6) no-repeat;
+					border-color: #221d4f;
+					outline: none;
+					font-size: 20px;
+					font-weight: bold;
+					color: #221d4f;
+				}
+				.button:hover{
+					box-shadow: 0 0 10px #2d2291;
+				}
+				.button:active{
+					box-shadow:  0 0 10px #493cbc;
+				}
+				.checkbox input{
+					width: 50px;
+					height: 50px;
+					cursor: pointer;
+				}
+				.counter{
+					margin-left: 40%;
+					width: 50px;
+					height: 50px;
+					font-size: 30px;
+					outline: none;
+					background: linear-gradient(135deg, #8d86d6, #7570a3) no-repeat;
+				}
+			</code></pre>
+			JS
+			<pre class = 'code'><code class="language-css">
+				let MasOfSmallLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+				let MasOfBigLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+				let MasOfNumbers = ['1','2','3','4','5','6','7','8','9','0'];
+				let MasOfSymbols = ['!','@','#','$','%','^','&','*','(',')','{','}','[',']','№',';',':','?','+','-','='];
+
+				let PasswordPlace = document.createElement('h2');
+				let button = document.querySelector('.button');
+				let InputCounter = document.querySelector('.counter');
+				InputCounter.value = '20';
+				let SmallLetters = document.querySelector('#SmallLetters');
+				let BigLetters = document.querySelector('#BigLetters');
+				let Numbers = document.querySelector('#Numbers');
+				let Symbols = document.querySelector('#Symbols');
+
+				SmallLetters.checked = true;
+				BigLetters.checked = true;
+				Numbers.checked = true;
+
+				PasswordPlace.style.left = '25%';
+				PasswordPlace.style.color = '#221d4f';
+				PasswordPlace.style.textAlign = 'left';
+				PasswordPlace.style.top = '15%';
+				PasswordPlace.style.position = 'absolute';
+
+				function radnomize(){
+					if((SmallLetters.checked)&(!(BigLetters.checked))&(!(Numbers.checked))&(!(Symbols.checked))){
+						let last = MasOfSmallLetters.length - 1;
+						let random = Math.round(Math.random() * (last - 0) + 0);
+						return MasOfSmallLetters[random];
+					}
+					else if(!(SmallLetters.checked)&(BigLetters.checked)&(!(Numbers.checked))&(!(Symbols.checked))){
+						let last = MasOfBigLetters.length - 1;
+						let random = Math.round(Math.random() * (last - 0) + 0);
+						return MasOfBigLetters[random];
+					}
+					else if((!(SmallLetters.checked))&(!(BigLetters.checked))&(Numbers.checked)&(!(Symbols.checked))){
+						let last = MasOfNumbers.length - 1;
+						let random = Math.round(Math.random() * (last - 0) + 0);
+						return MasOfNumbers[random];
+					}
+					else if((!(SmallLetters.checked))&(!(BigLetters.checked))&(!(Numbers.checked))&(Symbols.checked)){
+						let last = MasOfSymbols.length - 1;
+						let random = Math.round(Math.random() * (last - 0) + 0);
+						return MasOfSymbols[random];
+					}
+					else if((SmallLetters.checked)&(BigLetters.checked)&(!(Numbers.checked))&(!(Symbols.checked))){
+						let random = Math.round(Math.random() * (2 - 1) + 1);
+						let last;
+						if(random > 2){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfBigLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							default: 
+								break;
+						};
+					}
+					else if((SmallLetters.checked)&(!(BigLetters.checked))&(Numbers.checked)&(!(Symbols.checked))){
+						let random = Math.round(Math.random() * (2 - 1) + 1);
+						let last;
+						if(random > 2){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							default: 
+								break;
+						};
+					}
+					else if((!(SmallLetters.checked))&(BigLetters.checked)&(Numbers.checked)&(!(Symbols.checked))){
+						let random = Math.round(Math.random() * (2 - 1) + 1);
+						let last;
+						if(random > 2){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfBigLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							case 2:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							default: 
+								break;
+						};
+					}
+					else if((!(SmallLetters.checked))&(!(BigLetters.checked))&(Numbers.checked)&(Symbols.checked)){
+						let random = Math.round(Math.random() * (2 - 1) + 1);
+						let last;
+						if(random > 2){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							case 2:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: 
+								break;
+						};
+					}
+					else if((SmallLetters.checked)&(!(BigLetters.checked))&((!Numbers.checked))&(Symbols.checked)){
+						let random = Math.round(Math.random() * (2 - 1) + 1);
+						let last;
+						if(random > 2){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: 
+								break;
+						};
+					}
+					else if((!(SmallLetters.checked))&(BigLetters.checked)&((!Numbers.checked))&(Symbols.checked)){
+						let random = Math.round(Math.random() * (2 - 1) + 1);
+						let last;
+						if(random > 2){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							case 2:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: 
+								break;
+						};
+					}
+					else if((SmallLetters.checked)&(BigLetters.checked)&(Numbers.checked)&(!(Symbols.checked))){
+						let random = Math.round(Math.random() * (3 - 1) + 1);
+						let last;
+						if(random > 3){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfBigLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							case 3:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							default: break;
+						};
+					}
+					else if((SmallLetters.checked)&((!BigLetters.checked))&(Numbers.checked)&(Symbols.checked)){
+						let random = Math.round(Math.random() * (3 - 1) + 1);
+						let last;
+						if(random > 3){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							case 3:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: break;
+						};
+					}
+					else if((!(SmallLetters.checked))&(BigLetters.checked)&(Numbers.checked)&(Symbols.checked)){
+						let random = Math.round(Math.random() * (3 - 1) + 1);
+						let last;
+						if(random > 3){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfBigLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							case 2:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							case 3:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: break;
+						};
+					}
+					else if((SmallLetters.checked)&(BigLetters.checked)&(!(Numbers.checked))&(Symbols.checked)){
+						let random = Math.round(Math.random() * (3 - 1) + 1);
+						let last;
+						if(random > 3){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfBigLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							case 3:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: break;
+						};
+					}
+					else if((SmallLetters.checked)&(BigLetters.checked)&(Numbers.checked)&(Symbols.checked)){
+						let random = Math.round(Math.random() * (4 - 1) + 1);
+						let last;
+						if(random > 4){random -= 1};
+						switch(random){
+							case 1:
+								last = MasOfSmallLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSmallLetters[random];
+								break;
+							case 2:
+								last = MasOfBigLetters.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfBigLetters[random];
+								break;
+							case 3:
+								last = MasOfNumbers.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfNumbers[random];
+								break;
+							case 4:
+								last = MasOfSymbols.length - 1;
+								random = Math.round(Math.random() * (last - 0) + 0);
+								return MasOfSymbols[random];
+								break;
+							default: 
+								break;
+						};
+					};
+				}
+
+				InputCounter.addEventListener('keyup', function(){
+					if(+(InputCounter.value)>50){
+						InputCounter.value = '50';
+					};
+					if(+(InputCounter.value)<1){
+						InputCounter.value = '1';
+					};
+					if((Math.round(+(InputCounter.value))) != (+(InputCounter.value))){
+						InputCounter.value = '20';
+					};
+				});
+
+				button.addEventListener('click', function(){
+					if((!(SmallLetters.checked))&(!(BigLetters.checked))&(!(Numbers.checked))&(!(Symbols.checked))){
+						alert('Вы должны поставить хотябы 1 флажок.');
+					}
+					else
+					{	
+						let counter = +InputCounter.value;
+						let password = '';
+						for(i = 1;i <= counter;i += 1){
+							password += radnomize(); 
+						};
+
+						document.body.appendChild(PasswordPlace).innerHTML = password;
+					};
+				});
+			</code></pre>
+
+		<script src="prism.js"></script>
+	</body>
+</html>
