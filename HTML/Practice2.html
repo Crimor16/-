@@ -1,0 +1,3216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background: #638bcc;
+				color: #f2f2f2;
+				font-weight: bold;
+				font-family: sans-serif;
+
+			}
+			img{
+				display: block;
+				margin-bottom: 10px;
+				width: 60%;
+				height: 20em;
+				border-radius: 5px;
+			}
+			button{
+				font-size: 20px;
+				border-radius: 7px;
+				color: #afaeae;
+				background-color: #38527c;
+				outline: none;
+				border: 1px solid #628db2;
+				cursor: pointer;
+				font-weight: bold;
+				font-family: sans-serif;
+				margin-bottom: 20px;
+				display: block;
+			}
+			button:active{
+				background-color: #5793c6;
+			}
+			button:hover{
+				box-shadow: 0 0 20px white;
+				color: white;
+			}
+			a{
+				text-decoration: none;
+			}
+			.code{
+				width: 57.5%;
+				border-radius: 5px;
+			}
+		</style>
+
+		<link href="..\HTML\prism.css" rel="stylesheet" />
+	</head>
+	<body>
+		<a href = '..\HTML\index.html'><button>Вернуться</button></a>
+		На этот раз на практике я делал электронную почту.
+
+		<h2>Вход в сеть</h2>
+		<img src = '../Images/Practice2/entry.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button, .button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover, .button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active, .button:active{
+				border-color: #2dcbe0;
+				border-color: #75c5ff;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}	color: #bde2fc;
+		}
+		</code></pre>
+		<h2>Регистрация</h2>
+		<img src = '../Images/Practice2/reg.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button, .button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover, .button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active, .button:active{
+				border-color: #2dcbe0;
+				border-color: #75c5ff;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+		</code></pre>
+		<h2>Главная страница (Входящие)</h2>
+		<img src = '../Images/Practice2/messages_destination.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.messages div div{
+				width: 99%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.messages div div:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.messages div div:active{
+				border-color: #2dcbe0;
+			}
+			.messages div{
+				width: 99.4%;
+				height: 20px;
+				background-color: #59a9c2;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				padding: 2px 0 0 2px;
+			}
+			.messages div:hover{
+				border-color: #ea789b;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			.messages div span span{
+				cursor: pointer;
+			}
+			.messages div span span:hover{
+				color: #ea789b;
+			}
+		</code></pre>
+		<h2>JS & PHP</h2>
+		<pre class = 'code'><code class="language-css">
+						 		let message = document.querySelector('.message');
+						 		let message_check = document.querySelector('.message_check');
+						 		let user = document.querySelector('.user');
+						 		let infoMessage = document.querySelector('.infoMessage');
+						 		let user_check = document.querySelector('.user_check');
+						 		let div = document.querySelector('.messages');
+								let newElement = document.createElement('div');
+								let id = document.createElement('span');
+								let span;
+								id.style.visibility = 'hidden';
+
+								let messageBox = document.createElement('div');
+								messageBox.style.height = '80px';
+
+								let newForm = document.createElement('form');
+								newElement.style.fontWeight = 'bold';
+								newForm.style.display = 'inline-block';
+								newForm.style.marginLeft = '2px';
+								newForm.action = 'set_spam.php';
+								newForm.method = 'post';
+								let button = document.createElement('button');
+								let input = document.createElement('input');
+
+								let favoriteForm = document.createElement('form');;
+								favoriteForm.style.display = 'inline-block';
+								favoriteForm.style.marginLeft = '20px';
+								favoriteForm.action = 'set_favorite.php';
+								favoriteForm.method = 'post';
+								let favorite = document.createElement('button');
+								let favoriteInput = document.createElement('input');
+								favoriteInput.style.visibility = 'hidden';
+								favoriteInput.style.position = 'absolute';
+								favoriteInput.style.display = 'inline-block';
+								favoriteInput.name = 'id';
+
+								let blackListForm = document.createElement('form');;
+								blackListForm.style.display = 'inline-block';
+								blackListForm.style.marginLeft = '2px';
+								blackListForm.action = 'set_blackList.php';
+								blackListForm.method = 'post';
+								let blackList = document.createElement('button');
+								blackList.style.width = 'auto';
+								let blackListInput = document.createElement('input');
+								blackListInput.style.visibility = 'hidden';
+								blackListInput.style.position = 'absolute';
+								blackListInput.style.display = 'inline-block';
+								blackListInput.name = 'sender';
+
+								let sender = document.createElement('span');
+								let time = document.createElement('span');
+								time.style.fontWeight = 'bold';
+								sender.style.fontWeight = 'bold';
+								let senderLogin = document.createElement('span');
+								sender.style.display = 'block';
+								
+								input.style.visibility = 'hidden';
+								input.style.position = 'absolute';
+								input.style.display = 'inline-block';
+								input.name = 'id';
+
+								let remove = document.createElement('button');
+
+								let removeForm = document.createElement('form');
+								removeForm.action = 'message_remove.php';
+								removeForm.method = 'post';
+								removeForm.style.display = 'inline-block';
+								removeForm.style.marginLeft = '2px';
+
+								let favoriteImage = document.createElement('img');
+								favoriteImage.src = './favorite.png';
+								favoriteImage.style.width = '50px';
+								favoriteImage.style.marginLeft = '110vh';
+								favoriteImage.style.position = 'absolute';
+
+								let removeInput = document.createElement('input');
+								removeInput.style.visibility = 'hidden';
+								removeInput.style.position = 'absolute';
+								removeInput.name = 'id';
+								";
+		$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+		$query = 'SELECT `id`, `title`, `login_sender`, `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '"';
+		setcookie('last', 'location: messages_destination.php');
+		$answer = mysqli_query($link, $query);
+		while($row = mysqli_fetch_assoc($answer)){
+			$query = 'SELECT `login_sender` FROM `messages` WHERE `id` = ' . $row['id'];
+			$answer2 = mysqli_query($link, $query);
+			$row1 = mysqli_fetch_assoc($answer2);
+			$login_sender = $row1['login_sender'];
+			$query = 'SELECT `id` FROM `spam` WHERE `login_spammed` = "' . $login_sender . '" AND `login_setted_spam` = "' . $_COOKIE['login'] . '"';
+			$answer2 = mysqli_query($link, $query);
+			$answer2 = mysqli_fetch_assoc($answer2);
+			$answer2 = $answer2['id'];
+			if(!$answer2){
+				$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+				for($i = 10; $i < 19; $i += 1){
+					$send_time .= $row['send_time'][$i];
+				}
+				$query = 'SELECT `messageID` FROM `favorite` WHERE `messageID` = ' . $row['id'];
+				$result = mysqli_query($link, $query);
+				$result = mysqli_fetch_assoc($result);
+				$result = $result['messageID'];
+
+				$element = '';
+
+				if($result){
+					$element .= '
+						//messageBox.appendChild(favoriteImage);
+						favoriteImage = favoriteImage.cloneNode();
+					';
+				}
+				$element .= '
+					input.value = "' . $row['id'] . '";
+					removeInput.value = ' . $row['id'] . ';
+
+					div.appendChild(messageBox);
+
+					messageBox.appendChild(sender).innerHTML = "Отправил: ";
+					sender.appendChild(senderLogin).innerHTML = "' . $row['login_sender'] . '";
+
+					senderLogin.addEventListener("click", function(){
+						this.id = "selected";
+						span = document.querySelector("#selected");
+						user.value = span.innerHTML;
+						infoMessage.value = "' . $row['id'] . '";
+						user_check.click();
+					})
+
+					messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+					messageBox.appendChild(favoriteForm);
+					favoriteForm.appendChild(favorite).innerHTML = "Добавить в избранное";
+					favoriteForm.appendChild(favoriteInput);
+					favoriteInput.value = ' . $row['id'] . ';
+
+					messageBox.appendChild(newForm);
+					newForm.appendChild(button).innerHTML = "Добавить в спам";
+					newForm.appendChild(input); 
+
+					messageBox.appendChild(blackListForm);
+					blackListForm.appendChild(blackList).innerHTML = "Добавить в черный список";
+					blackListForm.appendChild(blackListInput);
+					blackListInput.value = "' . $row['login_sender'] . '";
+
+					messageBox.appendChild(removeForm);
+					removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+					removeForm.appendChild(removeInput);
+
+					messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '";
+					newElement.addEventListener("click", function(){
+						this.id = "selected";
+						span = document.querySelector("#selected span");
+						message.value = span.innerHTML;
+						message_check.click();
+					})
+					';
+
+					if(!$row['checked']){
+						//$element .= 'newElement.style.borderColor = "#458491";';
+					}
+
+					$element .= '
+
+					newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+					blackListInput = blackListInput.cloneNode();
+					favoriteInput = favoriteInput.cloneNode();
+					blackListForm = blackListForm.cloneNode();
+					favoriteForm = favoriteForm.cloneNode();
+					senderLogin = senderLogin.cloneNode();
+					removeInput = removeForm.cloneNode();
+					newElement = newElement.cloneNode();
+					removeForm = removeForm.cloneNode();
+					messageBox = messageBox.cloneNode();
+					blackList = blackList.cloneNode();
+					favorite = favorite.cloneNode();
+					newForm = newForm.cloneNode();
+					button = button.cloneNode();
+					sender = sender.cloneNode();
+					remove = remove.cloneNode();
+					input = input.cloneNode();
+					time = time.cloneNode();
+					id = id.cloneNode();
+				';
+
+				$code .= $element;
+			};
+		};
+		mysqli_close($link);
+		</code></pre>
+		<h2>JS & PHP (Поиск сообщений во входящих)</h2>
+		<pre class = 'code'><code class="language-css">
+			let message = document.querySelector('.message');
+					 		let message_check = document.querySelector('.message_check');
+					 		let infoMessage = document.querySelector('.infoMessage');
+					 		let user = document.querySelector('.user');
+						 	let user_check = document.querySelector('.user_check');
+					 		let div = document.querySelector('.messages');
+							let newElement = document.createElement('div');
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let newForm = document.createElement('form');
+							newElement.style.fontWeight = 'bold';
+							newForm.style.display = 'inline-block';
+							newForm.style.marginLeft = '2px';
+							newForm.action = 'set_spam.php';
+							newForm.method = 'post';
+							let button = document.createElement('button');
+							let input = document.createElement('input');
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.style.marginLeft = '20px';
+							favoriteForm.action = 'set_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+
+							let blackListForm = document.createElement('form');;
+							blackListForm.style.display = 'inline-block';
+							blackListForm.style.marginLeft = '2px';
+							blackListForm.action = 'set_blackList.php';
+							blackListForm.method = 'post';
+							let blackList = document.createElement('button');
+							blackList.style.width = 'auto';
+							let blackListInput = document.createElement('input');
+							blackListInput.style.visibility = 'hidden';
+							blackListInput.style.position = 'absolute';
+							blackListInput.style.display = 'inline-block';
+							blackListInput.name = 'sender';
+
+							let sender = document.createElement('span');
+							let time = document.createElement('span');
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+							let senderLogin = document.createElement('span');
+							sender.style.display = 'block';
+							
+							input.style.visibility = 'hidden';
+							input.style.position = 'absolute';
+							input.style.display = 'inline-block';
+							input.name = 'id';
+
+							let remove = document.createElement('button');
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+
+							let favoriteImage = document.createElement('img');
+							favoriteImage.src = './favorite.png';
+							favoriteImage.style.width = '50px';
+							favoriteImage.style.marginLeft = '780px';
+							favoriteImage.style.position = 'absolute';
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+							";
+	$text = $_POST['search'];
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	$query = 'SELECT `id`, `title`, `login_sender`, `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '" AND (`login_sender` = "' . $text . '" OR `title` = "' . $text . '")';
+	if(!$text){
+		$query = 'SELECT `id`, `title`, `login_sender`, `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '"';
+	}
+	setcookie('last', 'location: messages_destination.php');
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$query = 'SELECT `login_sender` FROM `messages` WHERE `id` = ' . $row['id'];
+		$answer2 = mysqli_query($link, $query);
+		$row1 = mysqli_fetch_assoc($answer2);
+		$login_sender = $row1['login_sender'];
+		$query = 'SELECT `id` FROM `spam` WHERE `login_spammed` = "' . $login_sender . '" AND `login_setted_spam` = "' . $_COOKIE['login'] . '"';
+		$answer2 = mysqli_query($link, $query);
+		$answer2 = mysqli_fetch_assoc($answer2);
+		$answer2 = $answer2['id'];
+		if(!$answer2){
+			$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+			for($i = 10; $i < 19; $i += 1){
+				$send_time .= $row['send_time'][$i];
+			}
+			$query = 'SELECT `messageID` FROM `favorite` WHERE `messageID` = ' . $row['id'];
+			$result = mysqli_query($link, $query);
+			$result = mysqli_fetch_assoc($result);
+			$result = $result['messageID'];
+
+			$element = '';
+
+			if($result){
+				$element .= '
+					//messageBox.appendChild(favoriteImage);
+					favoriteImage = favoriteImage.cloneNode();
+				';
+			}
+			$element .= '
+				input.value = "' . $row['id'] . '";
+				removeInput.value = ' . $row['id'] . ';
+
+				div.appendChild(messageBox);
+
+				messageBox.appendChild(sender).innerHTML = "Отправил: ";
+				sender.appendChild(senderLogin).innerHTML = "' . $row['login_sender'] . '";
+
+				senderLogin.addEventListener("click", function(){
+					this.id = "selected";
+					span = document.querySelector("#selected");
+					user.value = span.innerHTML;
+					infoMessage.value = "' . $row['id'] . '";
+					user_check.click();
+				})
+
+				messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+				
+				messageBox.appendChild(favoriteForm);
+				favoriteForm.appendChild(favorite).innerHTML = "Добавить в избранное";
+				favoriteForm.appendChild(favoriteInput);
+				favoriteInput.value = ' . $row['id'] . ';
+
+				messageBox.appendChild(newForm);
+				newForm.appendChild(button).innerHTML = "Добавить в спам";
+				newForm.appendChild(input); 
+
+				messageBox.appendChild(blackListForm);
+				blackListForm.appendChild(blackList).innerHTML = "Добавить в черный список";
+				blackListForm.appendChild(blackListInput);
+				blackListInput.value = "' . $row['login_sender'] . '";
+
+				messageBox.appendChild(removeForm);
+				removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+				removeForm.appendChild(removeInput);
+
+				messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '"; 
+				';
+
+				if(!$row['checked']){
+					$element .= 'newElement.style.boxShadow = "0 0 2px snow"';
+				}
+
+				$element .= '
+				newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+				blackListInput = blackListInput.cloneNode();
+				favoriteInput = favoriteInput.cloneNode();
+				blackListForm = blackListForm.cloneNode();
+				favoriteForm = favoriteForm.cloneNode();
+				senderLogin = senderLogin.cloneNode();
+				removeInput = removeForm.cloneNode();
+				newElement = newElement.cloneNode();
+				removeForm = removeForm.cloneNode();
+				messageBox = messageBox.cloneNode();
+				blackList = blackList.cloneNode();
+				favorite = favorite.cloneNode();
+				newForm = newForm.cloneNode();
+				button = button.cloneNode();
+				sender = sender.cloneNode();
+				remove = remove.cloneNode();
+				input = input.cloneNode();
+				time = time.cloneNode();
+				id = id.cloneNode();
+			';
+			$code .= $element;
+		};
+	};
+	mysqli_close($link);
+
+	$code .= "
+			let messages = document.querySelectorAll('.messages div div');
+			function click(){
+					this.id = 'selected';
+					span = document.querySelector('#selected span');
+					message.value = span.innerHTML;
+					message_check.click();
+			};
+			for(let i = 0; i < messages.length; i += 1){
+					messages[i].onclick = click;
+			};
+		</code></pre>
+		<h2>Отправленные</h2>
+		<img src = '../Images/Practice2/messages_sended.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.messages div div{
+				width: 99%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.messages div div:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.messages div div:active{
+				border-color: #2dcbe0;
+			}
+			.messages div{
+				width: 99.4%;
+				height: 20px;
+				background-color: #59a9c2;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				padding: 2px 0 0 2px;
+			}
+			.messages div:hover{
+				border-color: #ea789b;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			.messages div span span{
+				cursor: pointer;
+			}
+			.messages div span span:hover{
+				color: #ea789b;
+			}
+		</code></pre>
+		<h2>JS & PHP</h2>
+		<pre class = 'code'><code class="language-css">
+			let sender = document.createElement('span');
+					 		sender.style.display = 'block';
+					 		let senderLogin = document.createElement('span');
+					 		let infoMessage = document.querySelector('.infoMessage');
+					 		let user = document.querySelector('.user');
+						 	let user_check = document.querySelector('.user_check');
+							let time = document.createElement('span');
+							time.style.marginRight = '20px';
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+					 		let message = document.querySelector('.message');
+
+					 		let message_check = document.querySelector('.message_check');
+					 		let div = document.querySelector('.messages');
+							let newElement = document.createElement('div');
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+
+
+							newElement.style.fontWeight = 'bold';
+
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let remove = document.createElement('button');
+							remove.style.display = 'inline-block';
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+
+							let updateForm = document.createElement('form');
+							let updateButton = document.createElement('button');
+							updateButton.style.width = 'auto';
+							updateForm.action = 'message_update.php';
+							updateForm.method = 'post';
+							updateForm.style.display = 'inline-block';
+							updateButton.style.display = 'inline-block';
+							let updateInput = document.createElement('input');
+							updateInput.style.visibility = 'hidden';
+							updateInput.style.position = 'absolute';
+							updateInput.name = 'id';
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.action = 'set_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+							";
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: messages_sended.php');
+	$query = 'SELECT `id`, `title`, `login_destination`, `send_time` FROM `messages` WHERE `login_sender` = "' . $_COOKIE['login'] . '"';
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+	$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+		for($i = 10; $i < 19; $i += 1){
+			$send_time .= $row['send_time'][$i];
+		}
+		$element = '
+			removeInput.value = ' . $row['id'] . ';
+			updateInput.value = ' . $row['id'] . ';
+
+			div.appendChild(messageBox);
+
+			messageBox.appendChild(sender).innerHTML = "Отправлено:";
+			sender.appendChild(senderLogin).innerHTML = "' . $row['login_destination'] . '";
+
+			senderLogin.addEventListener("click", function(){
+				this.id = "selected";
+				span = document.querySelector("#selected");
+				user.value = span.innerHTML;
+				infoMessage.value = "' . $row['id'] . '";
+				user_check.click();
+			})
+
+			messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+			messageBox.appendChild(favoriteForm);
+			favoriteForm.appendChild(favorite).innerHTML = "Добавить в избранное";
+			favoriteForm.appendChild(favoriteInput);
+			favoriteInput.value = ' . $row['id'] . ';
+
+			messageBox.appendChild(removeForm);
+			removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+			removeForm.appendChild(removeInput);
+
+			messageBox.appendChild(updateForm);
+			updateForm.appendChild(updateButton).innerHTML = "Редактировать сообщение";
+			updateForm.appendChild(updateInput).innerHTML = "' . $row['id'] . '";
+
+			messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '";
+			newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+			favoriteInput = favoriteInput.cloneNode();
+			updateButton = updateButton.cloneNode();
+			favoriteForm = favoriteForm.cloneNode();
+			senderLogin = senderLogin.cloneNode();
+			removeInput = removeForm.cloneNode();
+			updateInput = updateInput.cloneNode();
+			newElement = newElement.cloneNode();
+			removeForm = removeForm.cloneNode();
+			updateForm = updateForm.cloneNode();
+			messageBox = messageBox.cloneNode();
+			favorite = favorite.cloneNode();
+			sender = sender.cloneNode();
+			remove = remove.cloneNode();
+			time = time.cloneNode();
+			id = id.cloneNode();
+		';
+		$code .= $element;
+	};
+	mysqli_close($link);
+
+	$code .= "
+			let messages = document.querySelectorAll('.messages div div');
+			function click(){
+					this.id = 'selected';
+					span = document.querySelector('#selected span');
+					message.value = span.innerHTML;
+					message_check.click();
+			};
+			for(let i = 0; i < messages.length; i += 1){
+					messages[i].onclick = click;
+			};
+		</code></pre>
+		<h2>JS & PHP (Поиск сообщений в отпраленных)</h2>
+		<pre class = 'code'><code class="language-css">
+			let sender = document.createElement('span');
+					 		sender.style.display = 'block';
+					 		let senderLogin = document.createElement('span');
+					 		let user = document.querySelector('.user');
+						 	let user_check = document.querySelector('.user_check');
+						 	let infoMessage = document.querySelector('.infoMessage');
+							let time = document.createElement('span');
+							time.style.marginRight = '20px';
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+					 		let message = document.querySelector('.message');
+
+					 		let message_check = document.querySelector('.message_check');
+					 		let div = document.querySelector('.messages');
+							let newElement = document.createElement('div');
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+
+
+							newElement.style.fontWeight = 'bold';
+
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let remove = document.createElement('button');
+							remove.style.display = 'inline-block';
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+
+							let updateForm = document.createElement('form');
+							let updateButton = document.createElement('button');
+							updateButton.style.width = 'auto';
+							updateForm.action = 'message_update.php';
+							updateForm.method = 'post';
+							updateForm.style.display = 'inline-block';
+							updateButton.style.display = 'inline-block';
+							let updateInput = document.createElement('input');
+							updateInput.style.visibility = 'hidden';
+							updateInput.style.position = 'absolute';
+							updateInput.name = 'id';
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.action = 'set_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+							";
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: messages_sended.php');
+	$text = $_POST['search'];
+	$query = 'SELECT `id`, `title`, `login_destination`, `send_time` FROM `messages` WHERE `login_sender` = "' . $_COOKIE['login'] . '" AND (`login_destination` = "' . $text . '" OR `title` = "' . $text . '")';
+	if(!$text){
+		$query = 'SELECT `id`, `title`, `login_destination`, `send_time` FROM `messages` WHERE `login_sender` = "' . $_COOKIE['login'] . '"';
+	}
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+		for($i = 10; $i < 19; $i += 1){
+			$send_time .= $row['send_time'][$i];
+		}
+		$element = '
+			removeInput.value = ' . $row['id'] . ';
+			updateInput.value = ' . $row['id'] . ';
+
+			div.appendChild(messageBox);
+
+			messageBox.appendChild(sender).innerHTML = "Отправлено:";
+			sender.appendChild(senderLogin).innerHTML = "' . $row['login_destination'] . '";
+
+			senderLogin.addEventListener("click", function(){
+				this.id = "selected";
+				span = document.querySelector("#selected");
+				user.value = span.innerHTML;
+				infoMessage.value = "' . $row['id'] . '";
+				user_check.click();
+			})
+
+			messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+			messageBox.appendChild(favoriteForm);
+			favoriteForm.appendChild(favorite).innerHTML = "Добавить в избранное";
+			favoriteForm.appendChild(favoriteInput);
+			favoriteInput.value = ' . $row['id'] . ';
+
+			messageBox.appendChild(removeForm);
+			removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+			removeForm.appendChild(removeInput);
+
+			messageBox.appendChild(updateForm);
+			updateForm.appendChild(updateButton).innerHTML = "Редактировать сообщение";
+			updateForm.appendChild(updateInput).innerHTML = "' . $row['id'] . '";
+
+			messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '";
+			newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+			favoriteInput = favoriteInput.cloneNode();
+			updateButton = updateButton.cloneNode();
+			favoriteForm = favoriteForm.cloneNode();
+			senderLogin = senderLogin.cloneNode();
+			removeInput = removeForm.cloneNode();
+			updateInput = updateInput.cloneNode();
+			newElement = newElement.cloneNode();
+			removeForm = removeForm.cloneNode();
+			updateForm = updateForm.cloneNode();
+			messageBox = messageBox.cloneNode();
+			favorite = favorite.cloneNode();
+			sender = sender.cloneNode();
+			remove = remove.cloneNode();
+			time = time.cloneNode();
+			id = id.cloneNode();
+		';
+		$code .= $element;
+	};
+	mysqli_close($link);
+
+	$code .= "
+			let messages = document.querySelectorAll('.messages div div');
+			function click(){
+					this.id = 'selected';
+					span = document.querySelector('#selected span');
+					message.value = span.innerHTML;
+					message_check.click();
+			};
+			for(let i = 0; i < messages.length; i += 1){
+					messages[i].onclick = click;
+			};
+		</code></pre>
+		<h2>Избранное</h2>
+		<img src = '../Images/Practice2/favorite.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.messages div div{
+				width: 99%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.messages div div:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.messages div div:active{
+				border-color: #2dcbe0;
+			}
+			.messages div{
+				width: 99.4%;
+				height: 20px;
+				background-color: #59a9c2;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				padding: 2px 0 0 2px;
+			}
+			.messages div:hover{
+				border-color: #ea789b;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			.messages div span span{
+				cursor: pointer;
+			}
+			.messages div span span:hover{
+				color: #ea789b;
+			}
+		</code></pre>
+		<h2>JS & PHP</h2>
+		<pre class = 'code'><code class="language-css">
+			let message = document.querySelector('.message');
+					 		let message_check = document.querySelector('.message_check');
+					 		let div = document.querySelector('.messages');
+					 		let user = document.querySelector('.user');
+					 		let infoMessage = document.querySelector('.infoMessage');
+					 		let user_check = document.querySelector('.user_check');
+							let senderLogin = document.createElement('span');
+							let newElement = document.createElement('div');
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+
+							let newForm = document.createElement('form');
+							newElement.style.fontWeight = 'bold';
+							newForm.style.display = 'inline-block';
+							newForm.style.marginLeft = '2px';
+							newForm.action = 'set_spam.php';
+							newForm.method = 'post';
+							let button = document.createElement('button');
+							let input = document.createElement('input');
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.style.marginLeft = '20px';
+							favoriteForm.action = 'remove_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+
+							let sender = document.createElement('span');
+							let time = document.createElement('span');
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+
+							sender.style.display = 'block';
+							
+							input.style.visibility = 'hidden';
+							input.style.position = 'absolute';
+							input.style.display = 'inline-block';
+							input.name = 'id';
+
+							let remove = document.createElement('button');
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+							";
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: favorite.php');
+	$query = 'SELECT `id`, `title`, `login_sender`, `login_destination`,  `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '"';
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$query = 'SELECT `login_sender` FROM `messages` WHERE `id` = ' . $row['id'];
+		$answer2 = mysqli_query($link, $query);
+		$row1 = mysqli_fetch_assoc($answer2);
+		$login_sender = $row1['login_sender'];
+		$query = 'SELECT `id` FROM `favorite` WHERE `login_setted` = "' . $_COOKIE['login'] . '" AND `messageID` = "' . $row['id'] . '"';
+		$answer2 = mysqli_query($link, $query);
+		$answer2 = mysqli_fetch_assoc($answer2);
+		$answer2 = $answer2['id'];
+		if($answer2){
+			$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+			for($i = 10; $i < 19; $i += 1){
+				$send_time .= $row['send_time'][$i];
+			}
+			$element = '
+				input.value = "' . $row['id'] . '";
+				removeInput.value = ' . $row['id'] . ';
+
+				div.appendChild(messageBox);
+				';
+
+				if($row['login_sender'] == $_COOKIE['login']){
+					$element .= '
+						messageBox.appendChild(sender).innerHTML = "Отправлено: ";
+						sender.appendChild(senderLogin).innerHTML = "' . $row['login_sender'] . '";
+
+						senderLogin.addEventListener("click", function(){
+							this.id = "selected";
+							span = document.querySelector("#selected");
+							user.value = span.innerHTML;
+							infoMessage.value = "' . $row['id'] . '";
+							user_check.click();
+						});
+						';
+				}
+				else
+				{
+					$element .= 'messageBox.appendChild(sender).innerHTML = "Отправил: ";
+					sender.appendChild(senderLogin).innerHTML = "' . $row['login_sender'] . '";
+
+					senderLogin.addEventListener("click", function(){
+						this.id = "selected";
+						span = document.querySelector("#selected");
+						user.value = span.innerHTML;
+						infoMessage.value = "' . $row['id'] . '";
+						user_check.click();
+					});
+					';
+				}	
+			
+				$element .= 'messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+				messageBox.appendChild(favoriteForm);
+				favoriteForm.appendChild(favorite).innerHTML = "Убрать из избранного";
+				favoriteForm.appendChild(favoriteInput);
+				favoriteInput.value = ' . $row['id'] . ';
+
+				messageBox.appendChild(newForm);
+				newForm.appendChild(button).innerHTML = "Добавить в спам";
+				newForm.appendChild(input); 
+
+				messageBox.appendChild(removeForm);
+				removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+				removeForm.appendChild(removeInput);
+
+				messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '";
+				';
+
+				if(!$row['checked']){
+					//$element .= 'newElement.style.borderColor = "#458491";';
+				}
+
+				$element .= '
+
+				newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+				favoriteInput = favoriteInput.cloneNode();
+				favoriteForm = favoriteForm.cloneNode();
+				senderLogin = senderLogin.cloneNode();
+				removeInput = removeForm.cloneNode();
+				newElement = newElement.cloneNode();
+				removeForm = removeForm.cloneNode();
+				messageBox = messageBox.cloneNode();
+				favorite = favorite.cloneNode();
+				newForm = newForm.cloneNode();
+				button = button.cloneNode();
+				sender = sender.cloneNode();
+				remove = remove.cloneNode();
+				input = input.cloneNode();
+				time = time.cloneNode();
+				id = id.cloneNode();
+			';
+			$code .= $element;
+		};
+	};
+	mysqli_close($link);
+
+	$code .= "
+			let messages = document.querySelectorAll('.messages div div');
+			function click(){
+					this.id = 'selected';
+					span = document.querySelector('#selected span');
+					message.value = span.innerHTML;
+					message_check.click();
+			};
+			for(let i = 0; i < messages.length; i += 1){
+					messages[i].onclick = click;
+			};
+		</code></pre>
+		<h2>JS & PHP (Поиск сообщений в избранном)</h2>
+		<pre class = 'code'><code class="language-css">
+			let message = document.querySelector('.message');
+					 		let message_check = document.querySelector('.message_check');
+					 		let div = document.querySelector('.messages');
+							let newElement = document.createElement('div');
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+
+							let newForm = document.createElement('form');
+							newElement.style.fontWeight = 'bold';
+							newForm.style.display = 'inline-block';
+							newForm.style.marginLeft = '2px';
+							newForm.action = 'set_spam.php';
+							newForm.method = 'post';
+							let button = document.createElement('button');
+							let input = document.createElement('input');
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.style.marginLeft = '20px';
+							favoriteForm.action = 'remove_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+
+							let sender = document.createElement('span');
+							let time = document.createElement('span');
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+
+							sender.style.display = 'block';
+							
+							input.style.visibility = 'hidden';
+							input.style.position = 'absolute';
+							input.style.display = 'inline-block';
+							input.name = 'id';
+
+							let remove = document.createElement('button');
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+							";
+	$text = $_POST['search'];
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: favorite.php');
+	$query = 'SELECT `id`, `title`, `login_sender`, `login_destination`,  `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '" AND (`login_sender` = "' . $text . '" OR `title` = "' . $text . '" OR `login_destination` = "' . $text . '")';
+	if(!$text){
+		$query = 'SELECT `id`, `title`, `login_sender`, `login_destination`,  `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '"';
+	}
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$query = 'SELECT `login_sender` FROM `messages` WHERE `id` = ' . $row['id'];
+		$answer2 = mysqli_query($link, $query);
+		$row1 = mysqli_fetch_assoc($answer2);
+		$login_sender = $row1['login_sender'];
+		$query = 'SELECT `id` FROM `favorite` WHERE `login_setted` = "' . $_COOKIE['login'] . '" AND `messageID` = "' . $row['id'] . '"';
+		$answer2 = mysqli_query($link, $query);
+		$answer2 = mysqli_fetch_assoc($answer2);
+		$answer2 = $answer2['id'];
+		if($answer2){
+			$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+			for($i = 10; $i < 19; $i += 1){
+				$send_time .= $row['send_time'][$i];
+			}
+			$element = '
+				input.value = "' . $row['id'] . '";
+				removeInput.value = ' . $row['id'] . ';
+
+				div.appendChild(messageBox);
+				';
+
+				if($row['login_sender'] == $_COOKIE['login']){
+					$element .= 'messageBox.appendChild(sender).innerHTML = "Отправлено: ' . $row['login_destination'] . '";';
+				}
+				else
+				{
+					$element .= 'messageBox.appendChild(sender).innerHTML = "Отправил: ' . $row['login_sender'] . '";';
+				}	
+			
+				$element .= 'messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+				messageBox.appendChild(favoriteForm);
+				favoriteForm.appendChild(favorite).innerHTML = "Убрать из избранного";
+				favoriteForm.appendChild(favoriteInput);
+				favoriteInput.value = ' . $row['id'] . ';
+
+				messageBox.appendChild(newForm);
+				newForm.appendChild(button).innerHTML = "Добавить в спам";
+				newForm.appendChild(input); 
+
+				messageBox.appendChild(removeForm);
+				removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+				removeForm.appendChild(removeInput);
+
+				messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '";
+				';
+
+				if(!$row['checked']){
+					//$element .= 'newElement.style.borderColor = "#458491";';
+				}
+
+				$element .= '
+
+				newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+				favoriteInput = favoriteInput.cloneNode();
+				favoriteForm = favoriteForm.cloneNode();
+				removeInput = removeForm.cloneNode();
+				newElement = newElement.cloneNode();
+				removeForm = removeForm.cloneNode();
+				messageBox = messageBox.cloneNode();
+				favorite = favorite.cloneNode();
+				newForm = newForm.cloneNode();
+				button = button.cloneNode();
+				sender = sender.cloneNode();
+				remove = remove.cloneNode();
+				input = input.cloneNode();
+				time = time.cloneNode();
+				id = id.cloneNode();
+			';
+			$code .= $element;
+		};
+	};
+	mysqli_close($link);
+
+	$code .= "
+			let messages = document.querySelectorAll('.messages div div');
+			function click(){
+					this.id = 'selected';
+					span = document.querySelector('#selected span');
+					message.value = span.innerHTML;
+					message_check.click();
+			};
+			for(let i = 0; i < messages.length; i += 1){
+					messages[i].onclick = click;
+			};
+		</code></pre>
+		<h2>Черный список</h2>
+		<img src = '../Images/Practice2/blackList.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.messages div div{
+				width: 99%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.messages div div:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.messages div div:active{
+				border-color: #2dcbe0;
+			}
+			.messages div{
+				width: 99.4%;
+				height: 20px;
+				background-color: #59a9c2;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				font-weight: bold;
+				padding: 2px 0 0 2px;
+				cursor: pointer;
+			}
+			.messages div:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+		</code></pre>
+		<h2>JS & PHP</h2>
+		<pre class = 'code'><code class="language-css">
+			let parent = document.querySelector('.messages');
+					 		let user = document.querySelector('.user');
+					 		let infoMessage = document.querySelector('.infoMessage');
+					 		let user_check = document.querySelector('.user_check');
+
+					 		let div = document.createElement('div');
+					 		let removeForm = document.createElement('form');
+					 		removeForm.action = 'remove_blackList.php';
+					 		removeForm.method = 'post';
+					 		let remove = document.createElement('button');
+					 		remove.style.width = 'auto';
+					 		let removeInput = document.createElement('input');
+					 		removeInput.style.position = 'absolute';
+					 		removeInput.style.visibility = 'hidden';
+					 		removeInput.name = 'id';
+						";
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: blackList.php');
+	$query = 'SELECT `login_destination`, `id` FROM `blackList` WHERE `login_setted` = "' . $_COOKIE['login'] . '"';
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$element = '
+			parent.appendChild(removeForm);
+			removeForm.appendChild(remove).innerHTML = "Убрать из черного списка";
+			removeForm.appendChild(removeInput);
+			removeInput.value = ' . $row['id'] . '
+			removeForm.appendChild(div).innerHTML = "' . $row['login_destination'] . '";
+
+			removeInput = removeInput.cloneNode();
+			removeForm = removeForm.cloneNode();
+			remove = remove.cloneNode();
+
+			div.addEventListener("click", function(){
+				user.value = "' . $row['login_destination'] . '";
+				infoMessage.value = ' . $row['id'] . ';
+				user_check.click();
+			})
+
+			div = div.cloneNode();
+		';
+		$code .= $element;
+	};
+	mysqli_close($link);
+		</code></pre>
+		<h2>JS & PHP (Поиск пользователей в черном списке)</h2>
+		<pre class = 'code'><code class="language-css">
+			let parent = document.querySelector('.messages');
+
+					 		let div = document.createElement('div');
+					 		let removeForm = document.createElement('form');
+					 		removeForm.action = 'remove_blackList.php';
+					 		removeForm.method = 'post';
+					 		let remove = document.createElement('button');
+					 		remove.style.width = 'auto';
+					 		let removeInput = document.createElement('input');
+					 		removeInput.style.position = 'absolute';
+					 		removeInput.style.visibility = 'hidden';
+					 		removeInput.name = 'id';
+						";
+	$text = $_POST['search'];
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: blackList.php');
+	if($text){
+		$query = 'SELECT `login_destination`, `id` FROM `blackList` WHERE `login_setted` = "' . $_COOKIE['login'] . '" AND `login_destination` = "' . $text . '"';
+	}	
+	else
+	{
+		$query = 'SELECT `login_destination`, `id` FROM `blackList` WHERE `login_setted` = "' . $_COOKIE['login'] . '"';
+	}
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$element = '
+			parent.appendChild(removeForm);
+			removeForm.appendChild(remove).innerHTML = "Убрать из черного списка";
+			removeForm.appendChild(removeInput);
+			removeInput.value = ' . $row['id'] . '
+			removeForm.appendChild(div).innerHTML = "' . $row['login_destination'] . '";
+
+			removeInput = removeInput.cloneNode();
+			removeForm = removeForm.cloneNode();
+			remove = remove.cloneNode();
+			div = div.cloneNode();
+		';
+		$code .= $element;
+	};
+	mysqli_close($link);
+		</code></pre>
+		<h2>Спам</h2>
+		<img src = '../Images/Practice2/spam.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.messages div div{
+				width: 99%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+			.messages div div:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.messages div div:active{
+				border-color: #2dcbe0;
+			}
+			.messages div{
+				width: 99.4%;
+				height: 20px;
+				background-color: #59a9c2;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				padding: 2px 0 0 2px;
+			}
+			.messages div:hover{
+				border-color: #ea789b;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			.messages div span span{
+				cursor: pointer;
+			}
+			.messages div span span:hover{
+				color: #ea789b;
+			}
+		</code></pre>
+		<h2>JS & PHP</h2>
+		<pre class = 'code'><code class="language-css">
+			let message = document.querySelector('.message');
+					 		let message_check = document.querySelector('.message_check');
+					 		let div = document.querySelector('.messages');
+							let newElement = document.createElement('div');
+							let user = document.querySelector('.user');
+					 		let infoMessage = document.querySelector('.infoMessage');
+					 		let user_check = document.querySelector('.user_check');
+							let senderLogin = document.createElement('span');
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let newForm = document.createElement('form');
+							newForm.style.display = 'inline-block';
+							newForm.style.marginLeft = '2px';
+							newForm.action = 'spam_remove.php';
+							newForm.method = 'post';
+							let button = document.createElement('button');
+							let input = document.createElement('input');
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.style.marginLeft = '20px';
+							favoriteForm.action = 'set_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+
+							let blackListForm = document.createElement('form');;
+							blackListForm.style.display = 'inline-block';
+							blackListForm.style.marginLeft = '2px';
+							blackListForm.action = 'set_blackList.php';
+							blackListForm.method = 'post';
+							let blackList = document.createElement('button');
+							blackList.style.width = 'auto';
+							let blackListInput = document.createElement('input');
+							blackListInput.style.visibility = 'hidden';
+							blackListInput.style.position = 'absolute';
+							blackListInput.style.display = 'inline-block';
+							blackListInput.name = 'sender';
+
+							let sender = document.createElement('span');
+							let time = document.createElement('span');
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+							sender.style.display = 'block';
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+
+							input.style.visibility = 'hidden';
+							input.style.position = 'absolute';
+							input.style.display = 'inline-block';
+							input.name = 'id';
+
+							let crSpan = document.createElement('span');
+							crSpan.style.visibility = 'hidden';
+							crSpan.style.position = 'absolute';
+
+							let remove = document.createElement('button');
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+							";
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	setcookie('last', 'location: messages_spam.php');
+	$query = 'SELECT `id`, `title`, `login_sender`, `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '"';
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$query = 'SELECT `login_sender` FROM `messages` WHERE `id` = ' . $row['id'];
+		$answer2 = mysqli_query($link, $query);
+		$row1 = mysqli_fetch_assoc($answer2);
+		$login_sender = $row1['login_sender'];
+		$query = 'SELECT `id` FROM `spam` WHERE `login_spammed` = "' . $login_sender . '" AND `login_setted_spam` = "' . $_COOKIE['login'] . '"';
+		$answer2 = mysqli_query($link, $query);
+		$answer2 = mysqli_fetch_assoc($answer2);
+		$answer2 = $answer2['id'];
+		if($answer2){
+			$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+			for($i = 10; $i < 19; $i += 1){
+				$send_time .= $row['send_time'][$i];
+			}
+			$element = '
+				input.value = "' . $row['id'] . '";
+				removeInput.value = ' . $row['id'] . '
+
+				div.appendChild(messageBox);
+
+				messageBox.appendChild(sender).innerHTML = "Отправил: ";
+
+				sender.appendChild(senderLogin).innerHTML = "' . $row['login_sender'] . '";
+
+				senderLogin.addEventListener("click", function(){
+					this.id = "selected";
+					span = document.querySelector("#selected");
+					user.value = span.innerHTML;
+					infoMessage.value = "' . $row['id'] . '";
+					user_check.click();
+				})
+			
+				messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+				messageBox.appendChild(favoriteForm);
+				favoriteForm.appendChild(favorite).innerHTML = "Добавить в избранное";
+				favoriteForm.appendChild(favoriteInput);
+				favoriteInput.value = ' . $row['id'] . ';
+
+				messageBox.appendChild(newForm);
+				newForm.appendChild(button).innerHTML = "Убрать из спама";
+				newForm.appendChild(input); 
+
+				messageBox.appendChild(blackListForm);
+				blackListForm.appendChild(blackList).innerHTML = "Добавить в черный список";
+				blackListForm.appendChild(blackListInput);
+				blackListInput.value = "' . $row['login_sender'] . '";
+
+				messageBox.appendChild(removeForm);
+				removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+				removeForm.appendChild(removeInput);
+				
+				messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '"; 
+				newElement.appendChild(crSpan).innerHTML = ' . $row['id'] . ';
+				newElement.addEventListener("click", function(){
+					this.id = "selected";
+					span = document.querySelector("#selected span");
+					console.log(span);
+					message.value = span.innerHTML;
+					message_check.click();
+				})
+				';
+
+				if(!$row['checked']){
+					$element .= 'newElement.style.boxShadow = "0 0 2px snow"';
+				}
+
+				$element .= '
+					blackListInput = blackListInput.cloneNode();
+					favoriteInput = favoriteInput.cloneNode();
+					blackListForm = blackListForm.cloneNode();
+					favoriteForm = favoriteForm.cloneNode();
+					senderLogin = senderLogin.cloneNode();
+					removeInput = removeForm.cloneNode();
+					newElement = newElement.cloneNode();
+					removeForm = removeForm.cloneNode();
+					messageBox = messageBox.cloneNode();
+					blackList = blackList.cloneNode();
+					favorite = favorite.cloneNode();
+					newForm = newForm.cloneNode();
+					crSpan = crSpan.cloneNode();
+					button = button.cloneNode();
+					sender = sender.cloneNode();
+					remove = remove.cloneNode();
+					input = input.cloneNode();
+					time = time.cloneNode();
+					id = id.cloneNode();
+			';
+			$code .= $element;
+		};
+	};
+	mysqli_close($link);
+		</code></pre>
+		<h2>JS & PHP (Поиск сообщений в спаме)</h2>
+		<pre class = 'code'><code class="language-css">
+			let message = document.querySelector('.message');
+					 		let message_check = document.querySelector('.message_check');
+					 		let div = document.querySelector('.messages');
+					 		let user = document.querySelector('.user');
+					 		let infoMessage = document.querySelector('.infoMessage');
+					 		let user_check = document.querySelector('.user_check');
+							let senderLogin = document.createElement('span');
+							let newElement = document.createElement('div');
+							let id = document.createElement('span');
+							let span;
+							id.style.visibility = 'hidden';
+
+							let newForm = document.createElement('form');
+							newElement.style.fontWeight = 'bold';
+							newForm.style.display = 'inline-block';
+							newForm.style.marginLeft = '2px';
+							newForm.action = 'spam_remove.php';
+							newForm.method = 'post';
+							let button = document.createElement('button');
+							let input = document.createElement('input');
+
+							let favoriteForm = document.createElement('form');;
+							favoriteForm.style.display = 'inline-block';
+							favoriteForm.style.marginLeft = '20px';
+							favoriteForm.action = 'set_favorite.php';
+							favoriteForm.method = 'post';
+							let favorite = document.createElement('button');
+							let favoriteInput = document.createElement('input');
+							favoriteInput.style.visibility = 'hidden';
+							favoriteInput.style.position = 'absolute';
+							favoriteInput.style.display = 'inline-block';
+							favoriteInput.name = 'id';
+
+							let blackListForm = document.createElement('form');;
+							blackListForm.style.display = 'inline-block';
+							blackListForm.style.marginLeft = '2px';
+							blackListForm.action = 'set_blackList.php';
+							blackListForm.method = 'post';
+							let blackList = document.createElement('button');
+							blackList.style.width = 'auto';
+							let blackListInput = document.createElement('input');
+							blackListInput.style.visibility = 'hidden';
+							blackListInput.style.position = 'absolute';
+							blackListInput.style.display = 'inline-block';
+							blackListInput.name = 'sender';
+
+							let sender = document.createElement('span');
+							let time = document.createElement('span');
+							time.style.fontWeight = 'bold';
+							sender.style.fontWeight = 'bold';
+							sender.style.display = 'block';
+
+							let messageBox = document.createElement('div');
+							messageBox.style.height = '80px';
+							
+							input.style.visibility = 'hidden';
+							input.style.position = 'absolute';
+							input.style.display = 'inline-block';
+							input.name = 'id';
+
+							let remove = document.createElement('button');
+
+							let removeForm = document.createElement('form');
+							removeForm.action = 'message_remove.php';
+							removeForm.method = 'post';
+							removeForm.style.display = 'inline-block';
+							removeForm.style.marginLeft = '2px';
+
+							let removeInput = document.createElement('input');
+							removeInput.style.visibility = 'hidden';
+							removeInput.style.position = 'absolute';
+							removeInput.name = 'id';
+							";
+	$text = $_POST['search'];
+	$link = mysqli_connect('localhost', 'root', '' , 'e-mail');
+	$query = 'SELECT `id`, `title`, `login_sender`, `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '" AND (`login_sender` = "' . $text . '" OR `title` = "' . $text . '")';
+	if(!$text){
+		$query = 'SELECT `id`, `title`, `login_sender`, `send_time`, `checked` FROM `messages` WHERE `login_destination` = "' . $_COOKIE['login'] . '"';
+	}
+	setcookie('last', 'location: messages_spam.php');
+	$answer = mysqli_query($link, $query);
+	while($row = mysqli_fetch_assoc($answer)){
+		$query = 'SELECT `login_sender` FROM `messages` WHERE `id` = ' . $row['id'];
+		$answer2 = mysqli_query($link, $query);
+		$row1 = mysqli_fetch_assoc($answer2);
+		$login_sender = $row1['login_sender'];
+		$query = 'SELECT `id` FROM `spam` WHERE `login_spammed` = "' . $login_sender . '" AND `login_setted_spam` = "' . $_COOKIE['login'] . '"';
+		$answer2 = mysqli_query($link, $query);
+		$answer2 = mysqli_fetch_assoc($answer2);
+		$answer2 = $answer2['id'];
+		if($answer2){
+			$send_time = $row['send_time'][8] . $row['send_time'][9] . '.' . $row['send_time'][5] . $row['send_time'][6] . '.' . $row['send_time'][0] . $row['send_time'][1] . $row['send_time'][2] . $row['send_time'][3];
+		for($i = 10; $i < 19; $i += 1){
+			$send_time .= $row['send_time'][$i];
+		}
+			$element = '
+				input.value = "' . $row['id'] . '";
+				removeInput.value = ' . $row['id'] . ';
+
+				div.appendChild(messageBox);
+
+				messageBox.appendChild(sender).innerHTML = "Отправил: ";
+
+				sender.appendChild(senderLogin).innerHTML = "' . $row['login_sender'] . '";
+
+				senderLogin.addEventListener("click", function(){
+					this.id = "selected";
+					span = document.querySelector("#selected");
+					user.value = span.innerHTML;
+					infoMessage.value = "' . $row['id'] . '";
+					user_check.click();
+				})
+
+				messageBox.appendChild(time).innerHTML = "' . $send_time . '";
+
+				messageBox.appendChild(favoriteForm);
+				favoriteForm.appendChild(favorite).innerHTML = "Добавить в избранное";
+				favoriteForm.appendChild(favoriteInput);
+				favoriteInput.value = ' . $row['id'] . ';
+				
+				messageBox.appendChild(newForm);
+				newForm.appendChild(button).innerHTML = "Убрать из спама";
+				newForm.appendChild(input); 
+
+				messageBox.appendChild(blackListForm);
+				blackListForm.appendChild(blackList).innerHTML = "Добавить в черный список";
+				blackListForm.appendChild(blackListInput);
+				blackListInput.value = "' . $row['login_sender'] . '";
+
+				messageBox.appendChild(removeForm);
+				removeForm.appendChild(remove).innerHTML = "Удалить сообщение";
+				removeForm.appendChild(removeInput);
+
+				messageBox.appendChild(newElement).innerHTML = "' . $row['title'] . '"; 
+				';
+
+				if(!$row['checked']){
+					$element .= 'newElement.style.boxShadow = "0 0 2px snow"';
+				}
+
+				$element .= '
+					newElement.appendChild(id).innerHTML = "' . $row['id'] . '";
+
+					blackListInput = blackListInput.cloneNode();
+					favoriteInput = favoriteInput.cloneNode();
+					blackListForm = blackListForm.cloneNode();
+					favoriteForm = favoriteForm.cloneNode();
+					senderLogin = senderLogin.cloneNode();
+					removeInput = removeForm.cloneNode();
+					newElement = newElement.cloneNode();
+					removeForm = removeForm.cloneNode();
+					messageBox = messageBox.cloneNode();
+					blackList = blackList.cloneNode();
+					favorite = favorite.cloneNode();
+					newForm = newForm.cloneNode();
+					button = button.cloneNode();
+					sender = sender.cloneNode();
+					remove = remove.cloneNode();
+					input = input.cloneNode();
+					time = time.cloneNode();
+					id = id.cloneNode();
+			';
+			$code .= $element;
+		};
+	};
+	mysqli_close($link);
+
+	$code .= "
+			let messages = document.querySelectorAll('.messages div div');
+			function click(){
+					this.id = 'selected';
+					span = document.querySelector('#selected span');
+					message.value = span.innerHTML;
+					message_check.click();
+			};
+			for(let i = 0; i < messages.length; i += 1){
+					messages[i].onclick = click;
+			};
+		</code></pre>
+		<h2>Облачное хранилище</h2>
+		<img src = '../Images/Practice2/Acloud.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			.example-1 input[type=file]{
+				outline:0;
+				opacity:0;
+				pointer-events:none;
+				user-select:none;
+			}
+			.example-1 .label{
+				width:120px;
+				border:2px dashed grey;
+				border-radius:5px;
+				display:block;
+				padding:1.2em;
+				transition:border 300ms ease;
+				cursor:pointer;
+				text-align:center;
+			}
+			.example-1 .label i{
+				display:block;
+				font-size:42px;
+				padding-bottom:16px;
+			}
+			.example-1 .label i,.example-1 .label .title{
+				color:grey;
+				transition:200ms color;
+			}
+			.example-1 .label:hover{
+				border:2px solid #000
+			}
+			.example-1 .label:hover i,.example-1 .label:hover .title{
+				color:#000;
+			}
+			.file{
+				width: 99%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				cursor: pointer;
+				font-weight: bold;
+				text-indent: 5px;
+			}
+			.file:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			.file:active{
+				border-color: #2dcbe0;
+			}
+		</code></pre>
+		<h2>Отправление сообщения</h2>
+		<img src = '../Images/Practice2/message_send.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button, .button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover, .button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active, .button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			.example-1 input[type=file]{
+				outline:0;
+				opacity:0;
+				pointer-events:none;
+				user-select:none;
+			}
+			.example-1 .label{
+				width:120px;
+				border:2px dashed grey;
+				border-radius:5px;
+				display:block;
+				padding:1.2em;
+				transition:border 300ms ease;
+				cursor:pointer;
+				text-align:center;
+			}
+			.example-1 .label i{
+				display:block;
+				font-size:42px;
+				padding-bottom:16px;
+			}
+			.example-1 .label i,.example-1 .label .title{
+				color:grey;
+				transition:200ms color;
+			}
+			.example-1 .label:hover{
+				border:2px solid #000
+			}
+			.example-1 .label:hover i,.example-1 .label:hover .title{
+				color:#000;
+			}
+			textarea{
+				resize: none;
+				margin-bottom: 2px;	
+				height: 50vh;
+				width: 99.5%;
+				display: block;
+				margin-bottom: 2px;	
+				border-radius: 5px;
+				outline: none;
+				font-size: 200%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+			}
+			textarea::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+		</code></pre>
+		<h2>Просмотр сообщения</h2>
+		<img src = '../Images/Practice2/message_check.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+				body{
+					padding: 0 0 0 0;
+					font-family: sans-serif;
+					background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+					height: 100vh;
+					width: 100%;
+					overflow: hidden;
+				}
+				input{
+					display: block;
+					margin-bottom: 2px;	
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					outline: none;
+					font-size: 100%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-indent: 10px;
+				}
+				input::-webkit-input-placeholder {
+			   		color: #c0effc;
+			  	}
+				button{
+					cursor: pointer;
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					font-size: 100%;
+					font-weight: bold;
+					outline: none;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-align: center;
+					margin-bottom: 2px;
+				}
+				button:hover{
+					box-shadow:  0 0 15px #ea789b;	
+					color: #ea789b;
+					border-color: #ea789b;
+				}
+				button:active{
+					border-color: #2dcbe0;
+				}
+				a{
+					font-size: 100%;
+					text-decoration: none;
+					color: #c0effc;
+					font-weight: bold;
+					display: block;
+					margin-bottom: 2px;
+				}
+				a:hover{
+					color: #ea789b;
+				}
+				a:active{
+					color: #bde2fc;
+				}
+				.first{
+					width: 99%;
+					height: 20px;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					margin-bottom: 2px;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+				.second{
+					width: 99%;
+					height: 25em;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					margin-bottom: 2px;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+				.selected{
+					border: 3px solid #ea789b;
+				}
+				::-webkit-scrollbar{
+					width: 22px;
+				}
+				::-webkit-scrollbar-track-piece {
+				 	background: #2dcbe0;
+				 	border-radius:  5px;
+				}
+				::-webkit-scrollbar-thumb {
+					background: #c0effc;
+					border-radius: 10px;
+					border: 2px solid #aaf3f1;
+				}
+				.menu button{
+					height: 36px;
+				}
+				.message span span{
+						cursor: pointer;
+				}
+				.message span span:hover{
+					color: #ea789b;
+				}
+		</code></pre>
+		<h2>Вкладка "Пользователь"</h2>
+		<img src = '../Images/Practice2/user.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+				body{
+					padding: 0 0 0 0;
+					font-family: sans-serif;
+					background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+					height: 100vh;
+					width: 100%;
+					overflow: hidden;
+				}
+				input{
+					display: block;
+					margin-bottom: 2px;	
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					outline: none;
+					font-size: 100%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-indent: 10px;
+				}
+				input::-webkit-input-placeholder {
+			   		color: #c0effc;
+			  	}
+				button, .button{
+					cursor: pointer;
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					font-size: 100%;
+					font-weight: bold;
+					outline: none;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-align: center;
+					margin-bottom: 2px;
+				}
+				button:hover, .button:hover{
+					box-shadow:  0 0 15px #ea789b;	
+					color: #ea789b;
+					border-color: #ea789b;
+				}
+				button:active, .button:active{
+					border-color: #2dcbe0;
+				}
+				a{
+					font-size: 100%;
+					text-decoration: none;
+					color: #c0effc;
+					font-weight: bold;
+					display: block;
+					margin-bottom: 2px;
+				}
+				a:hover{
+					color: #ea789b;
+				}
+				a:active{
+					color: #bde2fc;
+				}
+				.selected{
+					border: 3px solid #ea789b;
+				}
+				::-webkit-scrollbar{
+					width: 22px;
+				}
+				::-webkit-scrollbar-track-piece {
+				 	background: #2dcbe0;
+				 	border-radius:  5px;
+				}
+				::-webkit-scrollbar-thumb {
+					background: #c0effc;
+					border-radius: 10px;
+					border: 2px solid #aaf3f1;
+				}
+				.menu button{
+					height: 36px;
+				}
+				textarea{
+					resize: none;
+					margin-bottom: 2px;	
+					height: 50vh;
+					width: 99.5%;
+					display: block;
+					margin-bottom: 2px;	
+					border-radius: 5px;
+					outline: none;
+					font-size: 200%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+				}
+				textarea::-webkit-input-placeholder {
+			   		color: #3b6d91;
+			  	}
+			  	.example-1 input[type=file]{
+					outline:0;
+					opacity:0;
+					pointer-events:none;
+					user-select:none;
+				}
+				.example-1 .label{
+					width:120px;
+					border:2px dashed grey;
+					border-radius:5px;
+					display:block;
+					padding:1.2em;
+					transition:border 300ms ease;
+					cursor:pointer;
+					text-align:center;
+				}
+				.example-1 .label i{
+					display:block;
+					font-size:42px;
+					padding-bottom:16px;
+				}
+				.example-1 .label i,.example-1 .label .title{
+					color:grey;
+					transition:200ms color;
+				}
+				.example-1 .label:hover{
+					border:2px solid #000
+				}
+				.example-1 .label:hover i,.example-1 .label:hover .title{
+					color:#000;
+				}
+				.first{
+					width: 99%;
+					height: 20px;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					margin-bottom: 2px;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+				.second{
+					width: 99%;
+					height: 25em;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					margin-bottom: 2px;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+		</code></pre>
+		<h2>Изменение информации о пользователе</h2>
+		<img src = '../Images/Practice2/user_update.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+			body{
+				padding: 0 0 0 0;
+				font-family: sans-serif;
+				background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+			input{
+				display: block;
+				margin-bottom: 2px;	
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				outline: none;
+				font-size: 100%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-indent: 10px;
+			}
+			input::-webkit-input-placeholder {
+		   		color: #c0effc;
+		  	}
+			button, .button{
+				cursor: pointer;
+				height: 30px;
+				width: 200px;
+				border-radius: 5px;
+				font-size: 100%;
+				font-weight: bold;
+				outline: none;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				text-align: center;
+				margin-bottom: 2px;
+			}
+			button:hover, .button:hover{
+				box-shadow:  0 0 15px #ea789b;	
+				color: #ea789b;
+				border-color: #ea789b;
+			}
+			button:active, .button:active{
+				border-color: #2dcbe0;
+			}
+			a{
+				font-size: 100%;
+				text-decoration: none;
+				color: #c0effc;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 2px;
+			}
+			a:hover{
+				color: #ea789b;
+			}
+			a:active{
+				color: #bde2fc;
+			}
+			.selected{
+				border: 3px solid #ea789b;
+			}
+			::-webkit-scrollbar{
+				width: 22px;
+			}
+			::-webkit-scrollbar-track-piece {
+			 	background: #2dcbe0;
+			 	border-radius:  5px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #c0effc;
+				border-radius: 10px;
+				border: 2px solid #aaf3f1;
+			}
+			.menu button{
+				height: 36px;
+			}
+			textarea{
+				resize: none;
+				margin-bottom: 2px;	
+				height: 50vh;
+				width: 99.5%;
+				display: block;
+				margin-bottom: 2px;	
+				border-radius: 5px;
+				outline: none;
+				font-size: 200%;
+				font-weight: bold;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+			}
+			textarea::-webkit-input-placeholder {
+		   		color: #3b6d91;
+		  	}
+		  	.example-1 input[type=file]{
+				outline:0;
+				opacity:0;
+				pointer-events:none;
+				user-select:none;
+			}
+			.example-1 .label{
+				width:120px;
+				border:2px dashed grey;
+				border-radius:5px;
+				display:block;
+				padding:1.2em;
+				transition:border 300ms ease;
+				cursor:pointer;
+				text-align:center;
+			}
+			.example-1 .label i{
+				display:block;
+				font-size:42px;
+				padding-bottom:16px;
+			}
+			.example-1 .label i,.example-1 .label .title{
+				color:grey;
+				transition:200ms color;
+			}
+			.example-1 .label:hover{
+				border:2px solid #000
+			}
+			.example-1 .label:hover i,.example-1 .label:hover .title{
+				color:#000;
+			}
+			.first{
+				width: 95.4%;
+				height: 20px;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+			.second{
+				width: 95%;
+				height: 15em;
+				background-color: #2dcbe0;
+				border: 2px solid #aaf3f1;
+				color: #c0effc;
+				margin-bottom: 2px;
+				border-radius: 5px;
+				font-weight: bold;
+			}	
+		</code></pre>
+		<h2>Ответ на сообщение</h2>
+		<img src = '../Images/Practice2/answer_on_message.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+				body{
+					padding: 0 0 0 0;
+					font-family: sans-serif;
+					background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+					height: 100vh;
+					width: 100%;
+					overflow: hidden;
+				}
+				input{
+					display: block;
+					margin-bottom: 2px;	
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					outline: none;
+					font-size: 100%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-indent: 10px;
+				}
+				input::-webkit-input-placeholder {
+			   		color: #c0effc;
+			  	}
+				button, .button{
+					cursor: pointer;
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					font-size: 100%;
+					font-weight: bold;
+					outline: none;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-align: center;
+					margin-bottom: 2px;
+				}
+				button:hover, .button:hover{
+					box-shadow:  0 0 15px #ea789b;	
+					color: #ea789b;
+					border-color: #ea789b;
+				}
+				button:active, .button:active{
+					border-color: #2dcbe0;
+				}
+				a{
+					font-size: 100%;
+					text-decoration: none;
+					color: #c0effc;
+					font-weight: bold;
+					display: block;
+					margin-bottom: 2px;
+				}
+				a:hover{
+					color: #ea789b;
+				}
+				a:active{
+					color: #bde2fc;
+				}
+				.selected{
+					border: 3px solid #ea789b;
+				}
+				::-webkit-scrollbar{
+					width: 22px;
+				}
+				::-webkit-scrollbar-track-piece {
+				 	background: #2dcbe0;
+				 	border-radius:  5px;
+				}
+				::-webkit-scrollbar-thumb {
+					background: #c0effc;
+					border-radius: 10px;
+					border: 2px solid #aaf3f1;
+				}
+				.menu button{
+					height: 36px;
+				}
+				.example-1 input[type=file]{
+					outline:0;
+					opacity:0;
+					pointer-events:none;
+					user-select:none;
+				}
+				.example-1 .label{
+					width:120px;
+					border:2px dashed grey;
+					border-radius:5px;
+					display:block;
+					padding:1.2em;
+					transition:border 300ms ease;
+					cursor:pointer;
+					text-align:center;
+				}
+				.example-1 .label i{
+					display:block;
+					font-size:42px;
+					padding-bottom:16px;
+				}
+				.example-1 .label i,.example-1 .label .title{
+					color:grey;
+					transition:200ms color;
+				}
+				.example-1 .label:hover{
+					border:2px solid #000
+				}
+				.example-1 .label:hover i,.example-1 .label:hover .title{
+					color:#000;
+				}
+				textarea{
+					resize: none;
+					margin-bottom: 2px;	
+					height: 50vh;
+					width: 99.5%;
+					display: block;
+					margin-bottom: 2px;	
+					border-radius: 5px;
+					outline: none;
+					font-size: 200%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+				}
+				textarea::-webkit-input-placeholder {
+			   		color: #c0effc;
+			  	}
+		</code></pre>
+		<h2>Просмотр информации о другом пользователе</h2>
+		<img src = '../Images/Practice2/user_check.png'>
+		<h2>CSS</h2>
+		<pre class = 'code'><code class="language-css">
+				body{
+					padding: 0 0 0 0;
+					font-family: sans-serif;
+					background: linear-gradient(135deg, #5bd5f4, #edfbff) no-repeat center center fixed;
+					height: 100vh;
+					width: 100%;
+					overflow: hidden;
+				}
+				input{
+					display: block;
+					margin-bottom: 2px;	
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					outline: none;
+					font-size: 100%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-indent: 10px;
+				}
+				input::-webkit-input-placeholder {
+			   		color: #c0effc;
+			  	}
+				button, .button{
+					cursor: pointer;
+					height: 30px;
+					width: 200px;
+					border-radius: 5px;
+					font-size: 100%;
+					font-weight: bold;
+					outline: none;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					text-align: center;
+					margin-bottom: 2px;
+				}
+				button:hover, .button:hover{
+					box-shadow:  0 0 15px #ea789b;	
+					color: #ea789b;
+					border-color: #ea789b;
+				}
+				button:active, .button:active{
+					border-color: #2dcbe0;
+				}
+				a{
+					font-size: 100%;
+					text-decoration: none;
+					color: #c0effc;
+					font-weight: bold;
+					display: block;
+					margin-bottom: 2px;
+				}
+				a:hover{
+					color: #ea789b;
+				}
+				a:active{
+					color: #bde2fc;
+				}
+				.selected{
+					border: 3px solid #ea789b;
+				}
+				::-webkit-scrollbar{
+					width: 22px;
+				}
+				::-webkit-scrollbar-track-piece {
+				 	background: #2dcbe0;
+				 	border-radius:  5px;
+				}
+				::-webkit-scrollbar-thumb {
+					background: #c0effc;
+					border-radius: 10px;
+					border: 2px solid #aaf3f1;
+				}
+				.menu button{
+					height: 36px;
+				}
+				textarea{
+					resize: none;
+					margin-bottom: 2px;	
+					height: 50vh;
+					width: 99.5%;
+					display: block;
+					margin-bottom: 2px;	
+					border-radius: 5px;
+					outline: none;
+					font-size: 200%;
+					font-weight: bold;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+				}
+				textarea::-webkit-input-placeholder {
+			   		color: #3b6d91;
+			  	}
+			  	.example-1 input[type=file]{
+					outline:0;
+					opacity:0;
+					pointer-events:none;
+					user-select:none;
+				}
+				.example-1 .label{
+					width:120px;
+					border:2px dashed grey;
+					border-radius:5px;
+					display:block;
+					padding:1.2em;
+					transition:border 300ms ease;
+					cursor:pointer;
+					text-align:center;
+				}
+				.example-1 .label i{
+					display:block;
+					font-size:42px;
+					padding-bottom:16px;
+				}
+				.example-1 .label i,.example-1 .label .title{
+					color:grey;
+					transition:200ms color;
+				}
+				.example-1 .label:hover{
+					border:2px solid #000
+				}
+				.example-1 .label:hover i,.example-1 .label:hover .title{
+					color:#000;
+				}
+				.first{
+					width: 95%;
+					height: 20px;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					margin-bottom: 2px;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+				.second{
+					width: 95%;
+					height: 25em;
+					background-color: #2dcbe0;
+					border: 2px solid #aaf3f1;
+					color: #c0effc;
+					margin-bottom: 2px;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+		</code></pre>
+		<script src="prism.js"></script>
+	</body>
+</html>
